@@ -3,21 +3,28 @@ html, body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Yanone Kaffeesatz';
 }
 /*--- navbar css ---*/
 .navbar{
     background-color: #009C2F;
     border-bottom: 0px;
     color: white !important;
+    font-size: 1.5em;
 }
 .navbar-inverse .navbar-nav>li>a{
     color: white !important;
+}
+
+.bannerAndServicesWrapper{
+    height: 60%;
+    padding: 0px;
 }
 /*--- main banner css ---*/
 .carousel{
     margin-top: 2.5%;
     position: relative;
-    height: 60%;
+    height: 100%;
     overflow: hidden;
 }
 .item{
@@ -30,9 +37,10 @@ html, body {
     top: 50%;
 }
 
+/*--- three boxes css ---*/
 .threeBoxesContainer{
     position: absolute;
-    top: 15%;
+    top: 55%;
     bottom: 0;
     left: 0;
     right:0;
@@ -43,9 +51,42 @@ html, body {
     margin: auto;
 }
 .threeBoxesInner div{
-    margin-top: 5% !important;
-    background-color: red;
-    padding: 5%;
+    margin-top: 15% !important;
+    background-color: #009C2F;
+    padding: 3%;
     max-height: 300px;
-    text-align: justify;
+    text-align: center;
+}
+.threeBoxesInner div h2{
+    color: #0466BF;
+}
+.threeBoxesInner div p{
+    font-size: 20px;
+    color: white;
+}
+
+/*--- services section css ---*/
+.servicesSectionHeader{
+    text-align: center;
+    margin-top: 13%;
+}
+.servicesSectionContainer{
+    text-align: center;
+}
+.servicesSectionContainer p{
+    font-size: 20px;
+}
+
+/*--- featured works section css ---*/
+.featuredWorksWrapper{
+    margin-top: 3%;
+    text-align: center;
+    background-color: #222;
+}
+.featuredWorksHeader{
+    color: white;
+}
+.sdf{
+    padding: 0px !important;
+    margin: 0px !important;
 }
