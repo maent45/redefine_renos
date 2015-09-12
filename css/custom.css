@@ -118,6 +118,33 @@ html, body {
 
 /*--- footer section css ---*/
 .footer{
-    background-color: lightgray;
-    padding: 5%;
+    background-color: #222;
+    padding: 2%;
+}
+.footerSocial .fa-facebook{
+    font-size: 1.7em;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    height: 2.4em;
+    width: 2.4em;
+    padding: 4.9%;
+    margin: auto !important;
+    color: #999999;
+}
+.footerSocial .fa-twitter{
+    font-size: 1.7em;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    padding: 4.5%;
+    margin: auto !important;
+    color: #999999;
+}
+.footerContact i{
+    font-size: 1.5em;
+}
+.footer h4{
+    color: #eee;
+}
+.footer p, span{
+    color: #999;
 }
