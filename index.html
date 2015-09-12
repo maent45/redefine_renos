@@ -11,6 +11,9 @@
     <!--- font awesome --->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <!--- photo gallery plugin css --->
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+
     <!--- google fonts --->
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -152,19 +155,33 @@
         <br>
     </div>
 
-    <div class="row featuredWorksGallery">
+    <!--- main photo gallery --->
+    <div class="row featuredWorksGallery gallery">
+
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="images/pr.jpg" class="img-responsive">
+            <a href="images/pr.jpg" class="big">
+                <img src="images/pr.jpg" class="img-responsive" title="Test Image">
+            </a>
         </div>
+
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="images/projects_01.jpg" class="img-responsive">
+            <a href="images/projects_01.jpg" class="big">
+                <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
+            </a>
         </div>
+
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="images/projects_02.jpg" class="img-responsive">
+            <a href="images/projects_02.jpg" class="big">
+                <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
+            </a>
         </div>
+
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="images/projects_03.jpg" class="img-responsive">
+            <a href="images/projects_03.jpg" class="big">
+                <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
+            </a>
         </div>
+
     </div>
 </div>
 
@@ -243,6 +260,75 @@
 
 <!--- scripts --->
 <script src="js/jquery-2.1.4.min.js"></script>
+
+<!--- photo gallery plugin js --->
+<script src="js/simple-lightbox.min.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
+
+<!--- photo gallery custom js --->
+<script>
+    //Call gallery the plugin with default options to enable the lightbox.
+    var gallery = $('.gallery a').simpleLightbox();
+
+    //Full gallery plugin options with default values.
+    $.simpleLightbox({
+    // shows fullscreen overlay
+        overlay:    true,
+
+    // shows loading spinner
+        spinner:    true,
+
+    // shows navigation arrows
+        nav:      true,
+
+    // text for navigation arrows
+        navText:    ['&larr;','&rarr;'],
+
+    // shows image captions
+        captions:   true,
+
+    // captions attribute (title or data-title)
+        captionsData: 'title',
+
+    // shows close button
+        close:      true,
+
+    // text for close button
+        closeText:    'X',
+
+    // show counter
+        showCounter:	true,
+
+    // file extensions
+        fileExt:    'png|jpg|jpeg|gif',
+
+    // animation speed in ms
+        animationSpeed: 250,
+
+    // image preloading
+        preloading:   true,
+
+    // keyboard navigation
+        enableKeyboard: true,
+
+    // endless looping
+        loop:     true,
+
+    // closes the lightbox when clicking outside
+        docClose:     true,
+
+    // how much pixel you have to swipe
+        swipeTolerance: 50,
+
+    // lightbox wrapper Class
+        className:    'simple-lightbox',
+
+    // width / height ratios
+        widthRatio:   0.8,
+        heightRatio:  0.9
+    });
+</script>
+
 </body>
 </html>
