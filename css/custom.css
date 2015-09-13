@@ -61,6 +61,7 @@ html, body {
 .threeBoxesInner div{
     margin-top: 15% !important;
     background-color: #009C2F;
+    border: 1px solid #999;
     padding: 3%;
     height: 260px;
     max-height: 300px;
@@ -152,7 +153,7 @@ html, body {
     color: #999;
 }
 .footer h4{
-    color: #eee;
+    color: lightgreen;
 }
 .footer p, span{
     color: #999;
