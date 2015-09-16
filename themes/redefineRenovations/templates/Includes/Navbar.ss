@@ -30,9 +30,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!--<a class="navbar-brand" href="#">
-                <img src="images/logo/trans_log.png" class="img-responsive" width="350">
-            </a>-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,9 +37,6 @@
             <ul class="nav navbar-nav nav-justified">
                 <% loop $Menu(1) %>
                     <li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-                    <!--<li><a href="services.html">SERVICES</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#contactFormModal1">CONTACT</a></li>-->
                 <% end_loop %>
                 <li><a href="#" data-toggle="modal" data-target="#contactFormModal1">Contact Us</a></li>
             </ul>
