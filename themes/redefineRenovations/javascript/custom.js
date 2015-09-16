@@ -3,6 +3,7 @@
  */
 
 $(function(){
+    console.log("custom.js loaded")
     //Instantiate MixItUp:
     $('#Container').mixItUp();
 
@@ -65,6 +66,9 @@ $(function(){
     };
     //Call gallery the plugin with default options to enable the lightbox.
     var gallery = $('.gallery a').simpleLightbox(settings);
+
+    //add pagnateme plugin :)
+    $('.reviewSlider').paginateMe();
 });
 
 

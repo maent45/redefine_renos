@@ -296,30 +296,33 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewsSectionContainer">
                 <!--- loop the reviews --->
                     <% loop $JobReviews %>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewBox">
-                                <% if $jobTitle %>
-                                    <h3>$jobTitle</h3>
-                                <% end_if %>
-                                <% if $date %>
-                                    <i class="fa fa-calendar"></i>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 reviewSlider">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewBox">
+                                    <% if $jobTitle %>
+                                        <h3>$jobTitle</h3>
+                                    <% end_if %>
+                                    <% if $date %>
+                                        <i class="fa fa-calendar"></i>
+                                        &nbsp;
+                                        <span>$date</span>
+                                        <br>
+                                    <% end_if %>
+                                    <!--<% if $jobNumber %>
+                                    <i class="fa fa-external-link"></i>
                                     &nbsp;
-                                    <span>$date</span>
-                                    <br>
-                                <% end_if %>
-                                <!--<% if $jobNumber %>
-                                <i class="fa fa-external-link"></i>
-                                &nbsp;
-                                <span>$jobNumber</span>
-                            <% end_if %>-->
-                                <br><br>
-                                <% if $comment %>
-                                    <p><span style="font-weight: 900 !important; color: #000;">"</span>$comment<span style="font-weight: 900 !important; color: #000">"</span></p>
-                                <% end_if %>
+                                    <span>$jobNumber</span>
+                                <% end_if %>-->
+                                    <br><br>
+                                    <% if $comment %>
+                                        <p><span style="font-weight: 900 !important; color: #000;">"</span>$comment<span style="font-weight: 900 !important; color: #000">"</span></p>
+                                    <% end_if %>
+                                </div>
                             </div>
-                        </div>
+
                     <% end_loop %>
                 <!--- finish looping the Reviews Section --->
+                <div id="pagnation"></div>
             </div>
         </div>
     </div>
