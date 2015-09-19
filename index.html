@@ -169,52 +169,59 @@
         <br>
     </div>
 
-    <!--- main photo gallery --->
-    <div class="row featuredWorksGallery gallery">
+    <!--- mixItUp plugin controls --->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mixItUpControls">
+        <button class="btn btn-default filter" data-filter="all">All</button>
+        <button class="btn btn-default filter" data-filter=".outdoors">Outdoors</button>
+        <button class="btn btn-default filter" data-filter=".indoors">Indoors</button>
+    </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <!--- main photo gallery --->
+    <div class="row featuredWorksGallery gallery" id="Container">
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
             <a href="images/pr.jpg" class="big">
                 <img src="images/pr.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
             <a href="images/projects_01.jpg" class="big">
                 <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
             <a href="images/projects_02.jpg" class="big">
                 <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
             <a href="images/projects_03.jpg" class="big">
                 <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
             <a href="images/2.jpg" class="big">
                 <img src="images/2.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
             <a href="images/projects_02.jpg" class="big">
                 <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
             <a href="images/projects_03.jpg" class="big">
                 <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
             </a>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
             <a href="images/projects_01.jpg" class="big">
                 <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
             </a>
@@ -350,14 +357,26 @@
 
 <!--- scripts --->
 <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<!--- mixItUp plugin js --->
+<script src="js/jquery.mixitup.js"></script>
 <!--- photo gallery plugin js --->
 <script src="js/simple-lightbox.min.js"></script>
 
-<script src="js/bootstrap.min.js"></script>
-
 <!--- photo gallery custom js --->
 <script type="text/javascript">
+
+    // On document ready:
+
+    $(function(){
+
+// Instantiate MixItUp:
+
+        $('#Container').mixItUp();
+
+    });
+
     //Full gallery plugin options with default values.
     var settings = {
     // shows fullscreen overlay
