@@ -107,11 +107,18 @@ html, body {
     padding-bottom: 3%;
     margin-top: 3%;
     margin: 0px !important;
-    height: 224px !important;
-    max-height: 300px;
-    overflow: hidden !important;
 }
-
+.featuredWorksGallery img{
+    height: 300px !important;
+    width: 100%;
+    overflow: hidden;
+}
+.innerImageDesc{
+    background-color: lightgray;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
 /*--- reviews section css ---*/
 .reviewsSection{
     text-align: center;
