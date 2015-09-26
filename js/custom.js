@@ -3,59 +3,63 @@
  */
 
 $(function(){
-    // Instantiate MixItUp:
+    //Instantiate MixItUp:
     $('#Container').mixItUp();
 
-    /*-- image hover effects scripts ---
-    //on document load hide imageHoverEffect div
-    $('.imageHoverEffect').hide();
+//Instantiate sliphover
+    //$(".featuredWorksWrapper").sliphover();
 
-    //on hover fade in imageHoverEffect div
-    $('.imageHoverEffect').hover(function(){
-        $(this).stop().fadeToggle();
+    /*$('#d1').contenthover({
+        effect:'slide',
+        slide_speed:300,
+        overlay_background:'#000',
+        overlay_opacity:0.8
     });*/
+
+    //Full gallery plugin options with default values.
+    var settings = {
+        // shows fullscreen overlay
+        overlay:    true,
+        // shows loading spinner
+        spinner:    true,
+        // shows navigation arrows
+        nav:      true,
+        // text for navigation arrows
+        navText:    ['&larr;','&rarr;'],
+        // shows image captions
+        captions:   true,
+        // captions attribute (title or data-title)
+        captionsData: 'title',
+        // shows close button
+        close:      true,
+        // text for close button
+        closeText:    'X',
+        // show counter
+        showCounter:	true,
+        // file extensions
+        fileExt:    'png|jpg|jpeg|gif',
+        // animation speed in ms
+        animationSpeed: 250,
+        // image preloading
+        preloading:   true,
+        // keyboard navigation
+        enableKeyboard: true,
+        // endless looping
+        loop:     true,
+        // closes the lightbox when clicking outside
+        docClose:     true,
+        // how much pixel you have to swipe
+        swipeTolerance: 50,
+        // lightbox wrapper Class
+        className:    'simple-lightbox',
+        // width / height ratios
+        widthRatio:   0.8,
+        heightRatio:  0.9
+    };
+//Call gallery the plugin with default options to enable the lightbox.
+    var gallery = $('.gallery a').simpleLightbox(settings);
 
 });
 
-//Full gallery plugin options with default values.
-var settings = {
-    // shows fullscreen overlay
-    overlay:    true,
-    // shows loading spinner
-    spinner:    true,
-    // shows navigation arrows
-    nav:      true,
-    // text for navigation arrows
-    navText:    ['&larr;','&rarr;'],
-    // shows image captions
-    captions:   true,
-    // captions attribute (title or data-title)
-    captionsData: 'title',
-    // shows close button
-    close:      true,
-    // text for close button
-    closeText:    'X',
-    // show counter
-    showCounter:	true,
-    // file extensions
-    fileExt:    'png|jpg|jpeg|gif',
-    // animation speed in ms
-    animationSpeed: 250,
-    // image preloading
-    preloading:   true,
-    // keyboard navigation
-    enableKeyboard: true,
-    // endless looping
-    loop:     true,
-    // closes the lightbox when clicking outside
-    docClose:     true,
-    // how much pixel you have to swipe
-    swipeTolerance: 50,
-    // lightbox wrapper Class
-    className:    'simple-lightbox',
-    // width / height ratios
-    widthRatio:   0.8,
-    heightRatio:  0.9
-};
-//Call gallery the plugin with default options to enable the lightbox.
-var gallery = $('.gallery a').simpleLightbox(settings);
+
+
