@@ -5,6 +5,17 @@ html, body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
+
+/*--- topLogoHolder css ---*/
+.topLogoHolder div{
+
+}
+.topLogoHolder i{
+    font-size: 1.5em;
+    color: whitesmoke;
+    margin-top: 20%;
+}
+
 /*--- navbar css ---*/
 .navbar{
     border-bottom: 0px;
@@ -30,12 +41,17 @@ html, body {
 }
 .navbar-inverse .navbar-nav>li>a{
     color: white !important;
+    padding: 5% !important;
+    margin: 0px !important;
 }
-
+.navbar-nav.nav-justified > li :hover{
+    color: #009C2F !important;
+}
 .bannerAndServicesWrapper{
     height: 60%;
     padding: 0px;
 }
+
 /*--- main banner css ---*/
 .carousel{
     position: relative;
