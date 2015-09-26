@@ -7,8 +7,8 @@ html, body {
 }
 
 /*--- topLogoHolder css ---*/
-.topLogoHolder div{
-
+.topLogoHolder span{
+    font-size: 1.3em;
 }
 .topLogoHolder i{
     font-size: 1.5em;
