@@ -2,13 +2,18 @@
  * Created by Maen Terawasi on 23/09/2015.
  */
 
-// On document ready:
-
 $(function(){
-
-// Instantiate MixItUp:
-
+    // Instantiate MixItUp:
     $('#Container').mixItUp();
+
+    /*-- image hover effects scripts ---
+    //on document load hide imageHoverEffect div
+    $('.imageHoverEffect').hide();
+
+    //on hover fade in imageHoverEffect div
+    $('.imageHoverEffect').hover(function(){
+        $(this).stop().fadeToggle();
+    });*/
 
 });
 

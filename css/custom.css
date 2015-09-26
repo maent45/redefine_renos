@@ -108,10 +108,10 @@ html, body {
 
 /*--- featured works section css ---*/
 .featuredWorksWrapper{
-    margin-top: 6%;
+    margin-top: 17%;
     text-align: center;
     background-color: #222;
-    padding-bottom: 3%;
+    padding-bottom: 3.5%;
     height: auto !important;
 }
 .featuredWorksHeader{
@@ -141,7 +141,24 @@ html, body {
     border-right: 1px solid grey;
     border-bottom: 1px solid grey;
 }
+    /*--- image hover effect css ---*/
+    .imageHoverEffect{
+        background-color: #333;
+        position: absolute;
+        height: 100%;
+        opacity: 0.6;
+    }
+    .imageHoverEffect i{
+        color: whitesmoke;
+        margin-top: 40%;
+        font-size: 2em;
+    }
+
 /*--- reviews section css ---*/
+.reviewsSectionWrapper{
+    background-color: gainsboro;
+    margin-top: 3.5%;
+}
 .reviewsSection{
     text-align: center;
     margin-top: 3%;
@@ -153,6 +170,7 @@ html, body {
     height: 300px;
     padding: 2%;
     margin-top: 4%;
+    background-color: whitesmoke;
 }
 .reviewsSectionContainer .reviewBox p{
     font-style: italic;
