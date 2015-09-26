@@ -25,6 +25,9 @@ html, body {
     margin-bottom: 0px;
     font-size: 1em;
 }
+.navbar-inverse{
+    background-color: #449d44;
+}
 .navbar-brand{
     padding: 0px;
     margin: 0px;
@@ -82,7 +85,7 @@ html, body {
 }
 .threeBoxesInner div{
     margin-top: 15% !important;
-    background-color: #009C2F;
+    background-color: #333;
     border: 1px solid #999;
     padding: 3%;
     height: 260px;
@@ -92,8 +95,21 @@ html, body {
 .threeBoxesInner div h2{
     color: #0466BF;
 }
+.threeBoxesInner h3{
+    color: #449d44;
+}
 .threeBoxesInner div p{
-    color: white;
+    color: lightgray;
+}
+
+/*--- company statement css ---*/
+.statementDiv{
+    background-color: #449d44;
+    margin-top: 5%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5%;
+    font-style: italic;
 }
 
 /*--- services section css ---*/
@@ -108,7 +124,7 @@ html, body {
 
 /*--- featured works section css ---*/
 .featuredWorksWrapper{
-    margin-top: 17%;
+    margin-top: 3.5%;
     text-align: center;
     background-color: #222;
     padding-bottom: 3.5%;
