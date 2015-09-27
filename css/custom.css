@@ -78,7 +78,7 @@ html, body {
     left: 0;
     right:0;
     z-index: 99999;
-    pointer-events:none;
+    pointer-events: none;
     height: 10%;
     width: 80%;
     margin: auto;
@@ -159,10 +159,9 @@ html, body {
 }
     /*--- image hover effect css ---*/
     .imageHoverEffect{
-        background-color: #333;
+        background-color: rgba(0,0,0,0.53);
         position: absolute;
         height: 100%;
-        opacity: 0.4;
     }
     .imageHoverEffect i{
         color: whitesmoke;

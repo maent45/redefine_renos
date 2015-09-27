@@ -16,6 +16,13 @@ $(function(){
         overlay_opacity:0.8
     });*/
 
+    //hide hover effect on dom load
+    $('.imageHoverEffect').hide();
+    //image hover effect
+    $('.featuredWorksGallery .big').hover(function(element) {
+        $('.imageHoverEffect',$(this)).stop().slideToggle();
+    });
+
     //Full gallery plugin options with default values.
     var settings = {
         // shows fullscreen overlay
