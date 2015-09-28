@@ -9,7 +9,9 @@ function validateContactForm() {
     var contactNameField = document.getElementById("nameInput");
     var contactNameHiddenSpan = document.getElementById("requiredNameSpan");
 
-    var y = document.forms["contactForm"]["contactEmail"].value;
+    var contactEmailTxtBox = document.forms["contactForm"]["contactEmail"].value;
+    var contactEmailField = document.getElementById("emailInput");
+    var contactEmailHiddenSpan = document.getElementById("requiredEmailSpan");
 
     if (contactNameTxtBox == null || contactNameTxtBox == "") {
         contactNameField.className = "inputRequired";
@@ -18,8 +20,11 @@ function validateContactForm() {
         return false;
     }
 
-    else if(y == null || y == "") {
-        alert("email required");
+    else if(contactEmailTxtBox == null || contactEmailTxtBox == "" || contactEmailTxtBox ) {
+        //alert("email required");
+        contactEmailField.className = "inputRequired";
+        contactEmailField.focus();
+        contactEmailHiddenSpan.style.visibility = "visible";
         return false;
     }
 }
