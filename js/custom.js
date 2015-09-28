@@ -63,9 +63,8 @@ $(function(){
         widthRatio:   0.8,
         heightRatio:  0.9
     };
-//Call gallery the plugin with default options to enable the lightbox.
+    //Call gallery the plugin with default options to enable the lightbox.
     var gallery = $('.gallery a').simpleLightbox(settings);
-
 });
 
 
