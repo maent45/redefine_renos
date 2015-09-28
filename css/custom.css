@@ -65,6 +65,15 @@ html, body {
     line-height: 1.42857143;
     border-radius: 4px;
 }
+.inputCommentRequired{
+    border: 1px solid #d43f3a;
+    width: 100%;
+    height: 114px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
 
 /*--- main banner css ---*/
 .bannerCarousel{

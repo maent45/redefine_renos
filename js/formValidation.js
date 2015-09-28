@@ -4,7 +4,7 @@
 
 //Contact form validations
 function validateContactForm() {
-
+    //name vars
     var contactNameTxtBox = document.forms["contactForm"]["contactName"].value;
     var contactNameField = document.getElementById("nameInput");
     var contactNameHiddenSpan = document.getElementById("requiredNameSpan");
@@ -24,11 +24,25 @@ function validateContactForm() {
         return false;
     }
 
-    else if(atpos<1 || dotpos<atpos+2 || dotpos+2>=contactEmailTxtBox.length) {
+    if(atpos<1 || dotpos<atpos+2 || dotpos+2>=contactEmailTxtBox.length) {
         //alert("email required");
         contactEmailField.className = "inputRequired";
         contactEmailField.focus();
+        contactEmailHiddenSpan.innerHTML = "Please provide a valid email address";
         contactEmailHiddenSpan.style.visibility = "visible";
+        return false;
+    }
+
+    //comment area vars
+    var contactCommentTxtBox = document.forms["contactForm"]["contactCommentInput"].value;
+    var contactCommentField = document.getElementById("contactCommentField");
+    var contactCommentHiddenSpan = document.getElementById("requiredCommentSpan");
+
+    if(contactCommentTxtBox == null || contactCommentTxtBox == "") {
+        contactCommentField.className = "inputCommentRequired";
+        contactCommentField.focus();
+        contactCommentHiddenSpan.innerHTML = "Tell us your what you need.";
+        contactCommentHiddenSpan.style.visibility = "visible";
         return false;
     }
 }
