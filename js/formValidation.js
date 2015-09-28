@@ -9,9 +9,13 @@ function validateContactForm() {
     var contactNameField = document.getElementById("nameInput");
     var contactNameHiddenSpan = document.getElementById("requiredNameSpan");
 
+    //email vars
     var contactEmailTxtBox = document.forms["contactForm"]["contactEmail"].value;
     var contactEmailField = document.getElementById("emailInput");
     var contactEmailHiddenSpan = document.getElementById("requiredEmailSpan");
+    //email regex
+    var atpos = contactEmailTxtBox.indexOf("@");
+    var dotpos = contactEmailTxtBox.lastIndexOf(".");
 
     if (contactNameTxtBox == null || contactNameTxtBox == "") {
         contactNameField.className = "inputRequired";
@@ -20,7 +24,7 @@ function validateContactForm() {
         return false;
     }
 
-    else if(contactEmailTxtBox == null || contactEmailTxtBox == "" || contactEmailTxtBox ) {
+    else if(atpos<1 || dotpos<atpos+2 || dotpos+2>=contactEmailTxtBox.length) {
         //alert("email required");
         contactEmailField.className = "inputRequired";
         contactEmailField.focus();
