@@ -191,9 +191,23 @@ html, body {
     }
 
 /*--- featured works gallery carousel css ---*/
-
+/*--- overwrite original bootstrap css for modal backdrop ---*/
+.modal-backdrop.in{
+    opacity: 0.8 !important;
+}
+.mainGallerySlide{
+    background-color: red;
+}
+.mainGallerySlideInnerImages img{
+    width: 100%;
+    height: 600px !important;
+}
+.mainGallerySlideImageIndicators{
+    width: 50% !important;
+    margin-left: 25% !important;
+}
 /* Indicators list style */
-.mainGallerySlideImages img{
+.mainGallerySlideImageIndicators img{
     width: 100%;
 }
 .mainGallerySlide .carousel-indicators {
