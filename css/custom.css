@@ -191,19 +191,19 @@ html, body {
     }
 
 /*--- featured works gallery carousel css ---*/
-.carouselGallery{
-    background-color: red;
-}
-.carouselGalleryInnerImages img{
+
+/* Indicators list style */
+.mainGallerySlideImages img{
     width: 100%;
 }
-.carouselGalleryImgIndicators{
+.mainGallerySlide .carousel-indicators {
     bottom: 0;
     left: 0;
     margin-left: 5px;
     width: 100%;
 }
-.carouselGalleryImgIndicators li{
+/* Indicators list style */
+.mainGallerySlide .carousel-indicators li {
     border: medium none;
     border-radius: 0;
     float: left;
@@ -214,14 +214,16 @@ html, body {
     margin-top: 0;
     width: 100px;
 }
-.carouselGalleryImgIndicators img{
+/* Indicators images style */
+.mainGallerySlide .carousel-indicators img {
     border: 2px solid #FFFFFF;
     float: left;
     height: 54px;
     left: 0;
     width: 100px;
 }
-.carouselGalleryImgIndicators .active img{
+/* Indicators active image style */
+.mainGallerySlide .carousel-indicators .active img {
     border: 2px solid #428BCA;
     opacity: 0.7;
 }
