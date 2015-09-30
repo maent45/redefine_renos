@@ -1,37 +1,54 @@
 .mainServicesPageWrapper{
-    background-color: lightgray;
+    padding: 0px;
+}
+.mainServicesPageWrapper h2{
+    color: #449d44;
+    border-bottom: 2px solid #888888;
+    padding: 3px;
+    margin-bottom: 2.1%;
 }
 .mainServicesPageWrapper p{
     text-align: justify;
 }
 .servicesPageHeader{
-    margin-top: 2.1%;
-    margin-left: 1%;
     color: #333;
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+.servicesPageHeader h1, h4{
+    margin-left: 1.2%;
+}
+
 /*--- first service section css ---*/
-.firstServiceHeader{
-    margin-left: 1%;
-    margin-bottom: 1%;
+.firstServiceSection{
+    margin-bottom: 4%;
+}
+.firstServiceHeader h2{
+    float: left;
 }
 
 /*--- second service section css ---*/
+.secondServiceSection{
+    margin-bottom: 4%;
+    background-color: whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
 .secondServiceSection img{
     height: 216px;
     width: 100%;
 }
 .secondServiceHeader h2{
-    margin-right: 1%;
     float: right;
 }
 
 /*--- third service section css ---*/
 .thirdServiceSection{
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 .thirdServiceHeader h2{
-    margin-left: 1%;
-    margin-bottom: 1%;
+    float: left;
 }
 .thirdServiceSection img{
     height: 216px;
