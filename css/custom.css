@@ -178,6 +178,9 @@ html, body {
     border-bottom: 1px solid grey;
 }
     /*--- image hover effect css ---*/
+    .mix :hover{
+        cursor: pointer;
+    }
     .imageHoverEffect{
         background-color: rgba(0,0,0,0.53);
         position: absolute;
