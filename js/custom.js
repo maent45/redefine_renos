@@ -18,8 +18,8 @@ $(function(){
 
     //hide hover effect on dom load
     $('.imageHoverEffect').hide();
-    //image hover effect
-    $('.featuredWorksGallery .big').hover(function(element) {
+    //trigger image effect on hover
+    $('.featuredWorksGallery .mix').hover(function(element) {
         $('.imageHoverEffect',$(this)).stop().slideToggle();
     });
 

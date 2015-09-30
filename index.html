@@ -251,10 +251,10 @@
 
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
 
-            <div class="col-lg-12 imageHoverEffect">
+            <div class="col-lg-12 imageHoverEffect" data-toggle="modal" data-target=".bs-example-modal-lg">
                 <h4 style="color: whitesmoke; margin-top: 10%;">Project description goes here.</h4>
             </div>
-            <img src="images/pr.jpg" class="img-responsive" title="Test Image" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <img src="images/pr.jpg" class="img-responsive" title="Test Image">
 
             <div class="col-lg-12 innerImageDesc">
                 <h3>Kitchen Renovation</h3>
@@ -364,7 +364,7 @@
                 <h4>View this project's various phases from start to finish.</h4>
             </div>
             <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="article-photo-carousel">
+            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
                     <div class="item active">
@@ -382,19 +382,29 @@
                 </div>
                 <!-- Indicators -->
                 <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel">
                         <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
                     </li>
-                    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel">
                         <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
                     </li>
-                    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel">
                         <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
                     </li>
-                    <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel">
                         <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
                     </li>
                 </ol>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#gallery-photo-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#gallery-photo-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
             </div>
         </div>
