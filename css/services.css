@@ -12,7 +12,7 @@
 }
 .servicesPageHeader{
     color: #333;
-    background-color: whitesmoke;
+    background-color: #ebebeb;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -30,8 +30,8 @@
 
 /*--- second service section css ---*/
 .secondServiceSection{
-    margin-bottom: 4%;
-    background-color: whitesmoke;
+    margin-bottom: 2%;
+    background-color: #ebebeb;
     padding-top: 3%;
     padding-bottom: 5%;
 }

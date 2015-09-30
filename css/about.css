@@ -1,0 +1,22 @@
+.aboutPageWrapper{
+    padding: 0px;
+}
+.aboutPageWrapper h1{
+    margin-left: 1.2%;
+}
+
+/*--- aboutPageDescriptionSection css ---*/
+.aboutPageHeader{
+    background-color: #ebebeb;
+    padding-bottom: 2%;
+    padding-top: 1.5%;
+}
+.aboutPageMainSection{
+    margin-top: 3%;
+}
+.aboutPageMainSection h3{
+    color: #449d44;
+}
+.aboutPageMainSection p{
+    text-align: justify;
+}
