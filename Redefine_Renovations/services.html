@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Renovation Site</title>
+
+    <!--- css links --->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!--- call services page css --->
+    <link rel="stylesheet" href="css/services.css">
+
+    <!--- font awesome --->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--- photo gallery plugin css --->
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+
+    <!--- google fonts --->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ruda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--- top logo section --->
+<div class="col-lg-12 topLogoHolder" style="background-color: #333;">
+    <div class="container">
+        <div class="col-lg-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/trans_log.png" class="img-responsive" width="330">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <i class="fa fa-envelope"></i>
+            &nbsp;
+            <span>info@redefinerenos.com</span>
+        </div>
+        <div class="col-lg-3">
+            <i class="fa fa-phone" style="font-size: 1.9em !important; margin-top: 19%;"></i>
+            &nbsp;
+            <span>123-456-789</span>
+        </div>
+    </div>
+</div>
+
+<!--- navbar --->
+<nav class="navbar-inverse">
+    <div class="container-fluid container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">
+                <img src="images/logo/trans_log.png" class="img-responsive" width="350">
+            </a>-->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav nav-justified">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#contactFormModal1">CONTACT</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Contact Form Modal -->
+<div class="modal fade" id="contactFormModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel" style="color: #009C2F;">Enquiry Form</h3>
+                <i class="fa fa-envelope" style="margin-top: 2%; font-size: 1.8em;"></i>
+                &nbsp;
+                <span>info@redefinerenos.com</span>
+                &nbsp;
+                <i class="fa fa-phone" style="font-size: 1.9em !important; margin-top: 2%;"></i>
+                &nbsp;
+                <span>123-456-789</span>
+                <h5 style="margin-top: 2%;">Contact us directly or leave us a message and we'll get in touch shortly.</h5>
+            </div>
+            <form name="contactForm" onsubmit="return validateContactForm()" method="post">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <br/>
+                        <span id="requiredNameSpan" style="color: #d43f3a; visibility: hidden;">Please provide your name.</span>
+                        <input type="text" class="form-control" name="contactName" id="nameInput">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <span id="requiredEmailSpan" style="color: #d43f3a; visibility: hidden;"></span>
+                        <input type="text" class="form-control" name="contactEmail" id="emailInput">
+                    </div>
+                    <div class="form-group">
+                        <label>Comment:</label>
+                        <span id="requiredCommentSpan" style="color: #d43f3a; visibility: hidden;"></span>
+                        <textarea class="form-control" rows="5" name="contactCommentInput" id="contactCommentField"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success pull-right" id="contactSubmit" type="submit" onclick="">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--- main services container --->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainServicesPageWrapper">
+
+        <!--- services page header section --->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 servicesPageHeader">
+            <div class="container">
+                <h1>Our Services</h1>
+                <h4>We provide the following list of services.</h4>
+            </div>
+        </div>
+
+        <!--- first service section --->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 firstServiceSection">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 firstServiceHeader">
+                    <h2>Renovations</h2>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 firstServiceLeftSection">
+                    <img src="images/service_01.jpg" class="img-responsive">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 firstServiceRightSection">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--- second service section --->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 secondServiceSection">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 secondServiceHeader">
+                    <h2>Kitchens and Bathrooms</h2>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 secondServiceLeftSection">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 secondServiceRightSection">
+                    <img src="images/kitchen.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+
+        <!--- third service section --->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thirdServiceSection">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thirdServiceHeader">
+                    <h2>Watertight Solutions</h2>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 thirdServiceLeftSection">
+                    <img src="images/watertight.jpg" class="img-responsive">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 thirdServiceRightSection">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+<!--- footer section --->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+    <div class="container">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="text-align: center; color: #777;">
+            <h5>Copyright &copy; 2015 Redefine Renovations</h5>
+        </div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footerContact">
+            <!--<h4>Main Office</h4>
+            <div style="padding: 1px; background-color: #333; width: 20%; margin-bottom: 5%;"></div>
+            <i class="fa fa-map-marker"></i>
+            <span class="pull-right">
+                23 Trebann St Paparangi,
+                <br>
+                <span class="pull-right">
+                    Newlands,
+                    6037
+                </span>
+            </span>-->
+            <h4>Contact Details</h4>
+            <div style="padding: 1px; background-color: #333; width: 20%; margin-bottom: 5%;"></div>
+            <i class="fa fa-phone"></i>
+            <span class="pull-right">
+                123-456-789
+            </span>
+            <br><br>
+            <i class="fa fa-envelope"></i>
+            <span class="pull-right">
+                info@redefinerenos.com
+            </span>
+        </div>
+
+        <!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footerSocial">
+            <h4 style="margin-left: 15%;">Follow us</h4>
+            <div style="padding: 1px; background-color: #333; width: 20%; margin-bottom: 5%; margin-left: 15%;"></div>
+            <i class="fa fa-facebook" style="margin-left: 15% !important;"></i>
+            &nbsp;
+            <i class="fa fa-twitter"></i>
+        </div>-->
+
+        <div class="col-lg-2">
+
+        </div>
+
+        <!--<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+            <h4>Business Hours</h4>
+            <div style="padding: 1px; background-color: #333; width: 20%; margin-bottom: 5%;"></div>
+            <p>Our support available to help you 24 hours a day, seven days a week.</p>
+            <p class="pull-left">Monday-Friday:</p>
+            <p class="pull-right">9am to 5pm</p>
+            <br><br>
+            <p class="pull-left">Saturday:</p>
+            <p class="pull-right">10am to 2pm</p>
+            <br><br>
+            <p class="pull-left">Sunday:</p>
+            <p class="pull-right">Closed</p>
+        </div>-->
+    </div>
+</div>
+
+<!--- scripts --->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--- mixItUp plugin js --->
+<script src="js/jquery.mixitup.js"></script>
+<!--- photo gallery plugin js --->
+<script src="js/simple-lightbox.min.js"></script>
+
+<script src="js/imageHoverPlugin.js"></script>
+
+<!--- photo gallery custom js --->
+<script src="js/custom.js"></script>
+
+<script src="js/formValidation.js"></script>
+
+</body>
+</html>

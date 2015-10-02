@@ -1,8 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d5ebcca-2a64-4e8a-a8b6-9d56e597f123" name="Default" comment="" />
-    <ignored path="Builder_Site.iws" />
+    <list default="true" id="bb2ad3dc-6816-4006-a67b-5f0ffa9efd15" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\.idea\Builder_Site.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\about.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\about.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\custom.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\services.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\css\simplelightbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\building_cert.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\house_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\house_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\house_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\house_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\house_05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\logo\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\logo\logo_transparent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\logo\trans_log.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\pr.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\projects_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\projects_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\projects_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\service_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\service_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\images\service_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\custom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\formValidation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\imageHoverPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\jquery-2.1.4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\jquery.mixitup.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\js\simple-lightbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\build\jquery.mixitup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\docs\api-methods.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\docs\configuration-object.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\docs\events.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\docs\state-object.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\docs\version-1-migration.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\mixitup-master\src\jquery.mixitup.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\services.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\demo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\image9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\images\thumbs\thumb9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\demo\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\dist\simple-lightbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\dist\simple-lightbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\dist\simplelightbox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Development_Projects\redefine_renos\simplelightbox-master\dist\simplelightbox.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="redefine_renos.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,63 +126,39 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="Builder_Site" />
+    <favorites_list name="redefine_renos" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.56584096">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.63733333">
-                  <caret line="175" column="38" selection-start-line="175" selection-start-column="38" selection-end-line="175" selection-end-column="38" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/custom.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3956044">
-                  <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="_config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/_config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2300406">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Html5" />
-        <option value="CSS File" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -95,7 +179,7 @@
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -118,51 +202,85 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Builder_Site" />
+              <option name="myItemId" value="redefine_renos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Builder_Site" />
+              <option name="myItemId" value="redefine_renos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Builder_Site" />
+              <option name="myItemId" value="redefine_renos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Builder_Site" />
+              <option name="myItemId" value="redefine_renos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Builder_Site" />
+              <option name="myItemId" value="redefine_renos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redefine_renos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redefine_renos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redefine_renos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redefine_renos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="settings.editor.splitter.proportion" value="0.21645446" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -184,12 +302,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
       <method />
     </configuration>
   </component>
@@ -199,19 +311,27 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d5ebcca-2a64-4e8a-a8b6-9d56e597f123" name="Default" comment="" />
-      <created>1441609490345</created>
+      <changelist id="bb2ad3dc-6816-4006-a67b-5f0ffa9efd15" name="Default" comment="" />
+      <created>1443758886910</created>
       <option name="number" value="Default" />
-      <updated>1441609490345</updated>
+      <updated>1443758886910</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial push of Silverstripe install&#10;now starting to cut up redefin theme into Silverstripe">
+      <created>1443759786191</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1443759786191</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.166875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -241,29 +361,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial push of Silverstripe install&#10;now starting to cut up redefin theme into Silverstripe" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial push of Silverstripe install&#10;now starting to cut up redefin theme into Silverstripe" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/mysite/_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="400" column="74" selection-start-line="400" selection-start-column="74" selection-end-line="400" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -271,24 +386,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/Redefine_Renovations/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="240" column="27" selection-start-line="240" selection-start-column="27" selection-end-line="240" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/Redefine_Renovations/.idea/Builder_Site.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Redefine_Renovations/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12719892">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/_config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/code/Page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -296,87 +429,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/cms/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.023004059">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/mysite/_config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63733333">
-          <caret line="175" column="38" selection-start-line="175" selection-start-column="38" selection-end-line="175" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3956044">
-          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2300406">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -1,0 +1,56 @@
+.mainServicesPageWrapper{
+    padding: 0px;
+}
+.mainServicesPageWrapper h2{
+    color: #449d44;
+    border-bottom: 2px solid #888888;
+    padding: 3px;
+    margin-bottom: 2.1%;
+}
+.mainServicesPageWrapper p{
+    text-align: justify;
+}
+.servicesPageHeader{
+    color: #333;
+    background-color: #ebebeb;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.servicesPageHeader h1, h4{
+    margin-left: 1.2%;
+}
+
+/*--- first service section css ---*/
+.firstServiceSection{
+    margin-bottom: 4%;
+}
+.firstServiceHeader h2{
+    float: left;
+}
+
+/*--- second service section css ---*/
+.secondServiceSection{
+    margin-bottom: 2%;
+    background-color: #ebebeb;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.secondServiceSection img{
+    height: 216px;
+    width: 100%;
+}
+.secondServiceHeader h2{
+    float: right;
+}
+
+/*--- third service section css ---*/
+.thirdServiceSection{
+    margin-bottom: 8%;
+}
+.thirdServiceHeader h2{
+    float: left;
+}
+.thirdServiceSection img{
+    height: 216px;
+    width: 100%;
+}

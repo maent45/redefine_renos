@@ -1,0 +1,15 @@
+Notes
+=====
+//----Logo Bigger
+//----Contact Details Larger
+Template1 no slide
+Aerial Logo
+//----Fonts header a bit bigger
+Limit services page
+//----Reverse logo on header move it to top 
+include testimonials (take Yar's template - similar to KiwiBank 5:55 p.m. 26/09/2015)
+
+//----remove address
+//----remove social
+//----Just contact details
+Keep simple
