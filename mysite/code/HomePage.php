@@ -19,8 +19,8 @@ class HomePage extends Page {
         'ServiceDesc3' => 'Text',
 
         //db fields for quotes
-        'Quote1' => 'Varchar',
-        'Quote2' => 'Varchar',
+        'Quote1' => 'Text',
+        'Quote2' => 'Text',
 
         //db fields for Footer section
         'PhoneNumber' => 'Varchar',
@@ -42,8 +42,8 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.KeyServices', TextareaField::create('ServiceDesc3', 'Right Service Description'));
 
         //CMS fields for quotes
-        $fields->addFieldToTab('Root.Main', TextField::create('Quote1', 'First Quote'));
-        $fields->addFieldToTab('Root.Main', TextField::create('Quote2', 'Second Quote'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('Quote1', 'First Quote'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('Quote2', 'Second Quote'));
 
         //CMS fields for Footer contact details
         $fields->addFieldToTab('Root.Footer', TextField::create('PhoneNumber', 'Phone Number'));
@@ -59,7 +59,7 @@ class HomePage extends Page {
         $fields->removeFieldFromTab("Root.Main","Content");
 
         //temporarily remove MetaData field
-        //$fields->removeByName('Metadata');
+        $fields->removeByName('Metadata');
 
         return $fields;
     }
