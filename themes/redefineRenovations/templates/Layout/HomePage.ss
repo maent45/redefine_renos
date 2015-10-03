@@ -106,7 +106,7 @@
 <!--- quote area --->
 <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 statementDiv" style="margin-top: 22%;">
-        <h2>"Our promise is to provide the highest quality projects, while consistently delivering excellent customer service."</h2>
+        <h2>"$Quote1"</h2>
     </div>
 </div>
 
@@ -751,7 +751,7 @@
 <!--- quote area --->
 <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 statementDiv">
-        <h2>"Our promise is to provide the highest quality projects, while consistently delivering excellent customer service."</h2>
+        <h2>"$Quote2"</h2>
     </div>
 </div>
 
