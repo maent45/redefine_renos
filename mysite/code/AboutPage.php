@@ -21,21 +21,16 @@ class AboutPage extends Page {
         'RightSectionDesc' => 'Text'
     );
 
+    //create database fields for images
+    private static $has_one = array (
+        'LeftSectionImage' => 'Image',
+        'RightSectionImage' => 'Image'
+    );
+
     //update the CMS interface with new fields
     public function getCMSFields() {
         //declare var $fields
         $fields = parent::getCMSFields();
-
-        //add new fields to CMS interface
-        //main header and sub-header fields
-        $fields->addFieldToTab('Root.Main', TextField::create('PageHeading', 'Page Heading'));
-        $fields->addFieldToTab('Root.Main', TextareaField::create('PageSubHeading', 'Page Sub Heading'));
-
-        //left & right info section fields
-        $fields->addFieldToTab('Root.Main', TextField::create('LeftSectionTitle', 'Left Section Heading'));
-        $fields->addFieldToTab('Root.Main', TextareaField::create('LeftSectionDesc', 'Left Section Description'));
-        $fields->addFieldToTab('Root.Main', TextField::create('RightSectionTitle', 'Right Section Heading'));
-        $fields->addFieldToTab('Root.Main', TextareaField::create('RightSectionDesc', 'Right Section Description'));
 
         //create read-only fields
         $fields->addFieldToTab('Root.Metadata', new ReadonlyField('URLSegment', 'URL'));
@@ -46,6 +41,29 @@ class AboutPage extends Page {
         $fields->removeFieldFromTab("Root.Main","Content");
         //temporarily remove MetaData field
         $fields->removeByName('Metadata');
+
+        //add new fields to CMS interface
+        //main header and sub-header fields
+        $fields->addFieldToTab('Root.Main', TextField::create('PageHeading', 'Page Heading'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('PageSubHeading', 'Page Sub Heading'));
+
+        //add upload fields for images
+        $fields->addFieldToTab('Root.AboutUsInformation', $LeftSectionImage = new UploadField('LeftSectionImage','Left Section Image'));
+
+        //left & right info section fields
+        $fields->addFieldToTab('Root.AboutUsInformation', TextField::create('LeftSectionTitle', 'Left Section Heading'));
+        $fields->addFieldToTab('Root.AboutUsInformation', TextareaField::create('LeftSectionDesc', 'Left Section Description'));
+        //right section image upload field
+        $fields->addFieldToTab('Root.AboutUsInformation', $RightSectionImage = new UploadField('RightSectionImage','Right Section Image'));
+        $fields->addFieldToTab('Root.AboutUsInformation', TextField::create('RightSectionTitle', 'Right Section Heading'));
+        $fields->addFieldToTab('Root.AboutUsInformation', TextareaField::create('RightSectionDesc', 'Right Section Description'));
+
+        //validate image types
+        $LeftSectionImage->getValidator()->setAllowedExtensions(array('png','gif','jpg','jpeg'));
+        $RightSectionImage->getValidator()->setAllowedExtensions(array('png','gif','jpg','jpeg'));
+        //set image upload folder
+        $LeftSectionImage->setFolderName('About Page Images');
+        $RightSectionImage->setFolderName('About Page Images');
 
         return $fields;
     }

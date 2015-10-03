@@ -17,6 +17,9 @@
     margin-top: 3%;
     margin-bottom: 3%;
 }
+.aboutPageMainSection img{
+    width: 100%;
+}
 .aboutPageMainSection h3{
     color: #449d44;
     float: left;

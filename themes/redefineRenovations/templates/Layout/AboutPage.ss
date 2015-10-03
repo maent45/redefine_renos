@@ -16,7 +16,11 @@
             <!--- about left section --->
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img src="images/projects_04.jpg" class="img-responsive">
+                    <% if $LeftSectionImage %>
+                        <div class="img-responsive">
+                            $LeftSectionImage.SetWidth(500)
+                        </div>
+                    <% end_if %>
                     <h3>$LeftSectionTitle</h3>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -27,7 +31,11 @@
             <!--- about right section --->
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img src="images/projects_02.jpg" class="img-responsive">
+                    <% if $RightSectionImage %>
+                        <div class="img-responsive">
+                            $RightSectionImage.SetWidth(450)
+                        </div>
+                    <% end_if %>
                     <h3>$RightSectionTitle</h3>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
