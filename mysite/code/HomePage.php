@@ -51,7 +51,6 @@ class HomePage extends Page {
 
         //create read-only fields
         $fields->addFieldToTab('Root.Metadata', new ReadonlyField('URLSegment', 'URL'));
-
         $fields->removeFieldFromTab('Root.Content.Metadata', 'MenuTitle');
         $fields->addFieldToTab("Root.Content.Metadata", new ReadonlyField('MenuTitle','URL'));
 

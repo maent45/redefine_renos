@@ -27,8 +27,20 @@ class AboutPage extends Page {
         $fields = parent::getCMSFields();
 
         //add new fields to CMS interface
+        //main header and sub-header fields
         $fields->addFieldToTab('Root.Main', TextField::create('PageHeading', 'Page Heading'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('PageSubHeading', 'Page Sub Heading'));
+
+        //left & right info section fields
+        $fields->addFieldToTab('Root.Main', TextField::create('LeftSectionTitle', 'Left Section Heading'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('LeftSectionDesc', 'Left Section Description'));
+        $fields->addFieldToTab('Root.Main', TextField::create('RightSectionTitle', 'Right Section Heading'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('RightSectionDesc', 'Right Section Description'));
+
+        //create read-only fields
+        $fields->addFieldToTab('Root.Metadata', new ReadonlyField('URLSegment', 'URL'));
+        $fields->removeFieldFromTab('Root.Content.Metadata', 'MenuTitle');
+        $fields->addFieldToTab("Root.Content.Metadata", new ReadonlyField('MenuTitle','URL'));
 
         /*--- remove the default HTML editor section from CMS ---*/
         $fields->removeFieldFromTab("Root.Main","Content");
