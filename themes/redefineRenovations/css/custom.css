@@ -1,0 +1,329 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*--- topLogoHolder css ---*/
+.topLogoHolder span{
+    font-size: 1.3em;
+}
+.topLogoHolder i{
+    font-size: 1.5em;
+    color: whitesmoke;
+    margin-top: 20%;
+}
+
+/*--- navbar css ---*/
+.navbar{
+    border-bottom: 0px;
+    border-radius: 0px;
+    color: white !important;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+.navbar-inverse{
+    background-color: #449d44;
+}
+.navbar-brand{
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+.navbar-nav.nav-justified > li{
+    float:none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.navbar-collapse{
+    margin-top: 10% !important;
+    font-size: 1.3em;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white !important;
+    padding: 5% !important;
+    margin: 0px !important;
+}
+.navbar-nav.nav-justified > li :hover{
+    color: #333 !important;
+}
+.bannerAndServicesWrapper{
+    height: 60%;
+    padding: 0px;
+}
+
+/*--- contact form modal css ---*/
+.inputRequired{
+    border: 1px solid #d43f3a;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+.inputCommentRequired{
+    border: 1px solid #d43f3a;
+    width: 100%;
+    height: 114px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+.textarea.form-control{
+    height: 1% !important;
+}
+
+/*--- main banner css ---*/
+.bannerCarousel{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.item{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.bannerCarousel img{
+    width: 100%;
+}
+
+/*--- three boxes css ---*/
+.threeBoxesContainer{
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index: 99999;
+    pointer-events: none;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+.threeBoxesInner div{
+    margin-top: 15% !important;
+    background-color: #333;
+    border: 1px solid #999;
+    padding: 3%;
+    height: 260px;
+    max-height: 300px;
+    text-align: center;
+}
+.threeBoxesContainer a:hover{
+    cursor: pointer !important;
+}
+.threeBoxesInner div h2{
+    color: #0466BF;
+}
+.threeBoxesInner h3{
+    color: #449d44;
+}
+.threeBoxesInner div p{
+    color: lightgray;
+}
+
+/*--- company statement css ---*/
+.statementDiv{
+    background-color: #449d44;
+    margin-top: 5%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5%;
+    font-style: italic;
+}
+
+/*--- services section css ---*/
+.servicesSectionHeader{
+    text-align: center;
+    margin-top: 22.5%;
+
+}
+.servicesSectionContainer{
+    text-align: center;
+}
+
+/*--- featured works section css ---*/
+.featuredWorksWrapper{
+    margin-top: 3.5%;
+    text-align: center;
+    background-color: #222;
+    padding-bottom: 3.5%;
+    height: auto !important;
+}
+.featuredWorksHeader{
+    color: white;
+}
+    /*--- mixItUp controls css ---*/
+    .mixItUpControls{
+        margin-bottom: 2%;
+    }
+    #Container .mix{
+        display: none;
+    }
+.featuredWorksGallery div{
+    padding: 0px !important;
+    padding-bottom: 3%;
+    margin-top: 3%;
+    margin: 0px !important;
+}
+.featuredWorksGallery img{
+    height: 300px !important;
+    width: 100%;
+    overflow: hidden;
+}
+.innerImageDesc{
+    background-color: lightgray;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+    /*--- image hover effect css ---*/
+    .mix :hover{
+        cursor: pointer;
+    }
+    .imageHoverEffect{
+        background-color: rgba(0,0,0,0.53);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+    .imageHoverEffect i{
+        color: whitesmoke;
+        font-size: 2em;
+        border-radius: 50%;
+        border: 2px solid white;
+        padding: 3%;
+    }
+    .imageHoverEffect i:hover{
+        font-size: 2.2em;
+        color: #009C2F;
+        border: 3px solid #449d44;
+    }
+
+/*--- featured works gallery carousel css ---*/
+/*--- overwrite original bootstrap css for modal backdrop ---*/
+.modal-backdrop.in{
+    opacity: 0.8 !important;
+}
+.mainGallerySlide{
+    background-color: red;
+}
+.mainGallerySlideInnerImages img{
+    width: 100%;
+    height: 600px !important;
+}
+.mainGallerySlideImageIndicators{
+    width: 50% !important;
+    margin-left: 25% !important;
+}
+/* Indicators list style */
+.mainGallerySlideImageIndicators img{
+    width: 100%;
+}
+.mainGallerySlide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.mainGallerySlide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.mainGallerySlide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.mainGallerySlide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+/*--- reviews section css ---*/
+.reviewsSectionWrapper{
+    background-color: gainsboro;
+    margin-top: 3.5%;
+}
+.reviewsSection{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+.reviewsSectionContainer .reviewBox{
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    height: 300px;
+    padding: 2%;
+    margin-top: 4%;
+    background-color: whitesmoke;
+}
+.reviewsSectionContainer .reviewBox p{
+    font-style: italic;
+}
+.reviewsSectionContainer .reviewBox h3{
+    color: #009C2F;
+}
+
+/*--- footer section css ---*/
+.footer{
+    background-color: #222;
+    padding: 2%;
+}
+.footerSocial .fa-facebook{
+    font-size: 1.7em;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    height: 2.4em;
+    width: 2.4em;
+    padding: 4.9%;
+    margin: auto !important;
+    color: #999999;
+}
+.footerSocial .fa-twitter{
+    font-size: 1.7em;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    padding: 4.5%;
+    margin: auto !important;
+    color: #999999;
+}
+.footerContact i{
+    font-size: 1.5em;
+    color: #999;
+}
+.footer h4{
+    color: lightgreen;
+}
+.footer p, span{
+    color: #999;
+}
+
+
+
+
+.contenthover { padding:20px 20px 10px 20px; }
+.contenthover, .contenthover h3, contenthover a { color:#fff; }
+.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.contenthover a.mybutton:hover { background:#34742d }
