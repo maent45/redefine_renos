@@ -43,10 +43,8 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
                     <div class="col-lg-12">
-                        <h3>Watertight Solutions</h3>
-                        <p>We are an LBP Site One.
-                            We specialise in alterations and additions with experience in all aspects of building
-                            Including watertight solutions as well as striving for a quality finish.</p>
+                        <h3>$ServiceTitle1</h3>
+                        <p>$ServiceDesc1</p>
                         <br><br>
                         <button class="btn btn-success"><a href="services.html">READ MORE</a></button>
                     </div>
@@ -54,10 +52,8 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
                     <div class="col-lg-12">
-                        <h3>Renovations</h3>
-                        <p>With my considerable project management skills, projects are completed efficiently, whilst ensuring the work completed is of the highest quality.
-
-                            My team and I are willing and able to take on new challenges and diverse work.</p>
+                        <h3>$ServiceTitle2</h3>
+                        <p>$ServiceDesc2</p>
                         <br>
                         <button class="btn btn-success"><a href="#">READ MORE</a></button>
                     </div>
@@ -65,10 +61,8 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
                     <div class="col-lg-12">
-                        <h3>Kitchen & Bathrooms</h3>
-                        <p>We specialise in a wide range of areas ranging from Kitchens, Bathrooms
-                            Renovations, New Houses
-                            Watertight solutions, and even project management skills which guarantees quality workmanship.</p>
+                        <h3>$ServiceTitle3</h3>
+                        <p>$ServiceDesc3</p>
                         <br><br>
                         <button class="btn btn-success"><a href="#">READ MORE</a></button>
                     </div>
