@@ -27,10 +27,25 @@ class HomePage extends Page {
         'EmailAddress' => 'Varchar'
     );
 
+    //set $has_many relationship to SlideShow
+    private static $has_many = array (
+        'SlideShows' => 'SlideShow'
+    );
+
     //updating the CMS interface
     public function getCMSFields() {
         //declare var $fields
         $fields = parent::getCMSFields();
+
+        //create GridField
+        $fields->addFieldToTab('Root.SlideShowImages', GridField::create(
+            'SlideShows',
+            'Home Page Slide Show Images',
+            //$this->SlideShows() relates to the $has_many relationship
+            $this->SlideShows(),
+            //following argument provides GridField UI components (pagination, add, delete buttons etc.)
+            GridFieldConfig_RecordEditor::create()
+        ));
 
         //add new fields to the CMS interface
         //CMS fields for services

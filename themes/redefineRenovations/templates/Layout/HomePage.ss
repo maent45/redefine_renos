@@ -4,25 +4,17 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="images/house_02.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/house_03.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/house_04.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            ...
+            <% loop $SlideShows %>
+                <% if Pos = 1 %>
+                    <div class="item active">
+                        $SlideShowImage.CroppedImage(650,255)
+                    </div>
+                <% else %>
+                    <div class="item">
+                        $SlideShowImage.CroppedImage(720,250)
+                    </div>
+                <% end_if %>
+            <% end_loop %>
         </div>
 
         <!-- Controls -->
