@@ -27,10 +27,11 @@ class HomePage extends Page {
         'EmailAddress' => 'Varchar'
     );
 
-    //set $has_many relationship to SlideShow
+    //set $has_many relationship
     private static $has_many = array (
         'SlideShows' => 'SlideShow',
-        'Categories' => 'ProjectCategory'
+        'Categories' => 'ProjectCategory',
+        'FeaturedWorks' => 'FeaturedWork'
     );
 
     //updating the CMS interface
@@ -58,14 +59,22 @@ class HomePage extends Page {
             GridFieldConfig_RecordEditor::create()
         ));
 
+        //create FeaturedWorks GridField
+        $fields->addFieldToTab('Root.FeatureWorks', GridField::create(
+           'FeaturedWorks',
+           'Featured Works Gallery',
+            $this->FeaturedWorks(),
+            GridFieldConfig_RecordEditor::create()
+        ));
+
         //add new fields to the CMS interface
         //CMS fields for services
-        $fields->addFieldToTab('Root.KeyServices', TextField::create('ServiceTitle1', 'Left Service Title'));
-        $fields->addFieldToTab('Root.KeyServices', TextareaField::create('ServiceDesc1', 'Left Service Description'));
-        $fields->addFieldToTab('Root.KeyServices', TextField::create('ServiceTitle2', 'Middle Service Title'));
-        $fields->addFieldToTab('Root.KeyServices', TextareaField::create('ServiceDesc2', 'Middle Service Description'));
-        $fields->addFieldToTab('Root.KeyServices', TextField::create('ServiceTitle3', 'Right Service Title'));
-        $fields->addFieldToTab('Root.KeyServices', TextareaField::create('ServiceDesc3', 'Right Service Description'));
+        $fields->addFieldToTab('Root.Main', TextField::create('ServiceTitle1', 'Left Service Title'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('ServiceDesc1', 'Left Service Description'));
+        $fields->addFieldToTab('Root.Main', TextField::create('ServiceTitle2', 'Middle Service Title'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('ServiceDesc2', 'Middle Service Description'));
+        $fields->addFieldToTab('Root.Main', TextField::create('ServiceTitle3', 'Right Service Title'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('ServiceDesc3', 'Right Service Description'));
 
         //CMS fields for quotes
         $fields->addFieldToTab('Root.Main', TextareaField::create('Quote1', 'First Quote'));
