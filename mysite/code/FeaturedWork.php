@@ -6,7 +6,7 @@
  * Time: 11:32 PM
  */
 
-class FeaturedWorks extends DataObject {
+class FeaturedWork extends DataObject {
     //create database fields
     private static $db = array (
         'ProjectBriefDesc' => 'Text',
@@ -14,7 +14,6 @@ class FeaturedWorks extends DataObject {
         'ProjectDate' => 'Date'
     );
 
-    //create db image field
     private static $has_one = array (
         'ProjectCoverImage' => 'Image',
         'HomePage' => 'HomePage'
@@ -23,10 +22,10 @@ class FeaturedWorks extends DataObject {
     //update GridField CMS interface
     public function getCMSFields() {
         $fields = FieldList::create(
-            TextareaField::create('ProjectBriefDesc'),
-            TextField::create('ProjectTitle'),
-            DateField::create('ProjectDate'),
-            $imgUploadField = UploadField::create('ProjectCoverImage')
+            $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
+            TextareaField::create('ProjectBriefDesc', 'Brief Description'),
+            TextField::create('ProjectTitle', 'Title'),
+            DateField::create('ProjectDate', 'Completion Date')
         );
 
         //set image upload getTempFolder

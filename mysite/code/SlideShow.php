@@ -19,8 +19,6 @@ class SlideShow extends DataObject {
     private static $summary_fields = array (
         //GridThumbnail references getGridThumbnail() method
         'GridThumbnail' => ''
-        //SlideShowImage field relates to SlideShowImage declared in the $has_one relationship
-        //'SlideShowImage' => ''
     );
 
     //set method to resize GridField image thumbnail

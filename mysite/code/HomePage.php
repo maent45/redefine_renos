@@ -60,9 +60,10 @@ class HomePage extends Page {
         ));
 
         //create FeaturedWorks GridField
-        $fields->addFieldToTab('Root.FeatureWorks', GridField::create(
-           'FeaturedWorks',
-           'Featured Works Gallery',
+        $fields->addFieldToTab('Root.FeaturedWorks', GridField::create(
+            'FeaturedWorks',
+            'Project FeaturedWorks',
+            //$this->Categories() relates to the 'Categories' $has_many relationship
             $this->FeaturedWorks(),
             GridFieldConfig_RecordEditor::create()
         ));
