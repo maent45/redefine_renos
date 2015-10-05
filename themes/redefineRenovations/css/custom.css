@@ -111,12 +111,16 @@ html, body {
     background-color: #333;
     border: 1px solid #999;
     padding: 3%;
-    height: 260px;
+    height: auto;
     max-height: 300px;
     text-align: center;
 }
 .threeBoxesContainer a:hover{
     cursor: pointer !important;
+}
+.threeBoxesContainer button{
+    margin-top: 8%;
+    margin-bottom: 3%;
 }
 .threeBoxesInner div h2{
     color: #0466BF;

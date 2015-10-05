@@ -9,3 +9,5 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'redefineRenovations'
+GDBackend:
+    default_quality: 90

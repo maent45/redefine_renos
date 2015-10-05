@@ -6,12 +6,12 @@
         <div class="carousel-inner" role="listbox">
             <% loop $SlideShows %>
                 <% if Pos = 1 %>
-                    <div class="item active">
-                        $SlideShowImage.CroppedImage(650,255)
+                    <div class="item active img-responsive">
+                        $SlideShowImage.CroppedImage(1583,460)
                     </div>
                 <% else %>
-                    <div class="item">
-                        $SlideShowImage.CroppedImage(720,250)
+                    <div class="item img-responsive">
+                        $SlideShowImage.CroppedImage(1583,460)
                     </div>
                 <% end_if %>
             <% end_loop %>
@@ -37,7 +37,6 @@
                     <div class="col-lg-12">
                         <h3>$ServiceTitle1</h3>
                         <p>$ServiceDesc1</p>
-                        <br><br>
                         <button class="btn btn-success"><a href="services.html">READ MORE</a></button>
                     </div>
                 </div>
@@ -46,7 +45,6 @@
                     <div class="col-lg-12">
                         <h3>$ServiceTitle2</h3>
                         <p>$ServiceDesc2</p>
-                        <br>
                         <button class="btn btn-success"><a href="#">READ MORE</a></button>
                     </div>
                 </div>
@@ -55,7 +53,6 @@
                     <div class="col-lg-12">
                         <h3>$ServiceTitle3</h3>
                         <p>$ServiceDesc3</p>
-                        <br><br>
                         <button class="btn btn-success"><a href="#">READ MORE</a></button>
                     </div>
                 </div>
