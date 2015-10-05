@@ -16,8 +16,25 @@ class FeaturedWork extends DataObject {
 
     private static $has_one = array (
         'ProjectCoverImage' => 'Image',
+        //name following relationship based on parent class
         'HomePage' => 'HomePage'
     );
+
+    //create GridField summary fields
+    private static $summary_fields = array (
+        'GridThumbnail' => '',
+        'ProjectTitle' => 'Title',
+        'ProjectDate' => 'Completion Date'
+    );
+
+    //resize GridField thumbnail
+    public function getGridThumbnail() {
+        if($this->ProjectCoverImage()->exists()){
+            return $this->ProjectCoverImage()->SetWidth(250);
+        } else {
+            return ('No Cover Image has been added.');
+        }
+    }
 
     //update GridField CMS interface
     public function getCMSFields() {
@@ -25,7 +42,7 @@ class FeaturedWork extends DataObject {
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
             TextareaField::create('ProjectBriefDesc', 'Brief Description'),
             TextField::create('ProjectTitle', 'Title'),
-            DateField::create('ProjectDate', 'Completion Date')
+            DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy')
         );
 
         //set image upload getTempFolder
