@@ -42,7 +42,7 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.SlideShowImages', GridField::create(
             'SlideShows',
             'Home Page Slide Show Images',
-            //$this->SlideShows() relates to the $has_many relationship
+            //$this->SlideShows() relates to the 'SlideShows' $has_many relationship
             $this->SlideShows(),
             //following argument provides GridField UI components (pagination, add, delete buttons etc.)
             GridFieldConfig_RecordEditor::create()
@@ -53,6 +53,7 @@ class HomePage extends Page {
             //'Categories' relates to the
             'Categories',
             'Project Categories',
+            //$this->Categories() relates to the 'Categories' $has_many relationship
             $this->Categories(),
             GridFieldConfig_RecordEditor::create()
         ));
