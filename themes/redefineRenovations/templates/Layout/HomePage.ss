@@ -82,7 +82,7 @@
     <!--- mixItUp plugin controls --->
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mixItUpControls">
         <% loop $Categories %>
-            <button class="btn btn-default filter" data-filter="all">$Title</button>
+            <button class="btn btn-default filter" data-filter=".$Title">$Title</button>
         <% end_loop %>
         <!--<button class="btn btn-default filter" data-filter="all">All</button>
         <button class="btn btn-default filter" data-filter=".outdoors">Outdoors</button>
@@ -92,624 +92,90 @@
     <!--- main photo gallery --->
     <div class="row featuredWorksGallery gallery" id="Container">
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg1"></i>
+        <!--- loop over all FeaturedWorks --->
+        <% loop $FeaturedWorks %>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix $FeaturedWorkCategoryID">
+                <div class="col-lg-12 imageHoverEffect">
+                    <h4 style="color: white; margin-top: 30%;">$ProjectBriefDesc</h4>
+                    <i class="fa fa-expand" data-toggle="modal" data-target=".$ID"></i>
+                </div>
+                <img src="$ProjectCoverImage.URL" class="img-responsive" title="Test Image">
+                <div class="col-lg-12 innerImageDesc">
+                    <h3>$ProjectTitle</h3>
+                    <h4>$ProjectDate.Nice</h4>
+                </div>
             </div>
-            <img src="images/pr.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Kitchen Renovation</h3>
-                <h4>7th September 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg2"></i>
-            </div>
-            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Driveway Extension</h3>
-                <h4>13th September 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg3"></i>
-            </div>
-            <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Garage Renovation</h3>
-                <h4>25th June 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg4"></i>
-            </div>
-            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Kitchen Renovation</h3>
-                <h4>7th September 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg5"></i>
-            </div>
-            <img src="images/2.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Kitchen Renovation</h3>
-                <h4>7th September 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg6"></i>
-            </div>
-            <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Garage Construction</h3>
-                <h4>27th January 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix outdoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg7"></i>
-            </div>
-            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Living Room Renovation</h3>
-                <h4>12th September 2015</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix indoors">
-            <div class="col-lg-12 imageHoverEffect">
-                <h4 style="color: white; margin-top: 30%;">Project description goes here.</h4>
-                <i class="fa fa-expand" data-toggle="modal" data-target=".bs-example-modal-lg8"></i>
-            </div>
-            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-            <div class="col-lg-12 innerImageDesc">
-                <h3>Driveway Extension</h3>
-                <h4>7th July 2015</h4>
-            </div>
-        </div>
+        <% end_loop %>
 
     </div>
 </div>
 
 <!--- project 1 modal --->
-<div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Kitchen Renovation</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel1">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
+<% loop $FeaturedWorks %>
+    <div class="modal fade $ID" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="container">
+                    <h1>$ProjectTitle</h1>
+                    <h4>View this project's various phases from start to finish.</h4>
                 </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel1">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel1">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel1">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel1">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
+                <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
+                <div class="carousel slide mainGallerySlide" id="$ID">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
+                        <div class="item active">
+                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
+                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                <h4>First phase of this project was design.</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
+                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                <h4>Second phase was actual implementation.</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
+                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                <h4>Third phase was ...</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
+                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                <h4>Fourth phase was ...</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators mainGallerySlideImageIndicators">
+                        <li class="active" data-slide-to="0" data-target="#$ID">
+                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
+                        </li>
+                        <li class="" data-slide-to="1" data-target="#$ID">
+                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
+                        </li>
+                        <li class="" data-slide-to="2" data-target="#$ID">
+                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
+                        </li>
+                        <li class="" data-slide-to="3" data-target="#$ID">
+                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
+                        </li>
+                    </ol>
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel1" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel1" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#$ID" role="button" data-slide="prev">
+                        <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
+                    </a>
+                    <a class="right carousel-control" href="#$ID" role="button" data-slide="next">
+                        <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!--- project 2 modal --->
-<div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Driveway Extension</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel2">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel2">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel2">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel2">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel2">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel2" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel2" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- project 3 modal --->
-<div class="modal fade bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Garage Renovation</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel3">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel3">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel3">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel3">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel3">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel3" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel3" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- project 4 modal --->
-<div class="modal fade bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Kitchen Renovation</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel4">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel4">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel4">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel4">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel4">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel4" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel4" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- project 5 modal --->
-<div class="modal fade bs-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Kitchen Renovation</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel5">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel5">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel5">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel5">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel5">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel5" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel5" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- project 6 modal --->
-<div class="modal fade bs-example-modal-lg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Garage Construction</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel6">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel6">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel6">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel6">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel6">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel6" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel6" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- project 7 modal --->
-<div class="modal fade bs-example-modal-lg7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Living Room Renovation</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel7">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel7">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel7">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel7">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel7">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel7" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel7" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- project 8 modal --->
-<div class="modal fade bs-example-modal-lg8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="container">
-                <h1>Driveway Extension</h1>
-                <h4>View this project's various phases from start to finish.</h4>
-            </div>
-            <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
-            <div class="carousel slide mainGallerySlide" id="gallery-photo-carousel8">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                    <div class="item active">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>First phase of this project was design.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Second phase was actual implementation.</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Third phase was ...</h4>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                            <h4>Fourth phase was ...</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Indicators -->
-                <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                    <li class="active" data-slide-to="0" data-target="#gallery-photo-carousel8">
-                        <img src="images/projects_02.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="1" data-target="#gallery-photo-carousel8">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="2" data-target="#gallery-photo-carousel8">
-                        <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                    <li class="" data-slide-to="3" data-target="#gallery-photo-carousel8">
-                        <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                    </li>
-                </ol>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#gallery-photo-carousel8" role="button" data-slide="prev">
-                    <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-                <a class="right carousel-control" href="#gallery-photo-carousel8" role="button" data-slide="next">
-                    <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+<% end_loop %>
 
 <!--- quote area --->
 <div class="container">
