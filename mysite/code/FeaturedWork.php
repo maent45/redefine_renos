@@ -29,6 +29,7 @@ class FeaturedWork extends DataObject {
 
     //create GridField summary fields
     private static $summary_fields = array (
+        //key = db column, value = GridField column name to display
         'GridThumbnail' => 'Cover Image',
         'FeaturedWorkCategory.Title' => 'Category',
         'ProjectTitle' => 'Title',
@@ -47,7 +48,7 @@ class FeaturedWork extends DataObject {
     //update GridField CMS interface
     public function getCMSFields() {
         $fields = FieldList::create(
-            $category = DropdownField::create('CategoryID','Category', ProjectCategory::get()->map('ID', 'Title')),
+            $category = DropdownField::create('FeaturedWorkCategoryID','Category', ProjectCategory::get()->map('ID', 'Title')),
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
             TextareaField::create('ProjectBriefDesc', 'Brief Description'),
             TextField::create('ProjectTitle', 'Title'),
