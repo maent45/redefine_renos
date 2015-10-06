@@ -81,8 +81,9 @@
 
     <!--- mixItUp plugin controls --->
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mixItUpControls">
+        <button class="btn btn-default filter" data-filter="all">All</button>
         <% loop $Categories %>
-            <button class="btn btn-default filter" data-filter=".$Title">$Title</button>
+            <button class="btn btn-default filter" data-filter=".$ID">$Title</button>
         <% end_loop %>
         <!--<button class="btn btn-default filter" data-filter="all">All</button>
         <button class="btn btn-default filter" data-filter=".outdoors">Outdoors</button>
