@@ -44,15 +44,19 @@ class AboutPage extends Page {
 
         //add new fields to CMS interface
         //main header and sub-header fields
+        $fields->addFieldToTab('Root.Main', HeaderField::create('Page Header Information'));
         $fields->addFieldToTab('Root.Main', TextField::create('PageHeading', 'Page Heading'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('PageSubHeading', 'Page Sub Heading'));
 
+        //left & right info section fields
+        $fields->addFieldToTab('Root.AboutUsInformation', HeaderField::create('Left Section Information'));
         //add upload fields for images
         $fields->addFieldToTab('Root.AboutUsInformation', $LeftSectionImage = new UploadField('LeftSectionImage','Left Section Image'));
 
-        //left & right info section fields
         $fields->addFieldToTab('Root.AboutUsInformation', TextField::create('LeftSectionTitle', 'Left Section Heading'));
         $fields->addFieldToTab('Root.AboutUsInformation', TextareaField::create('LeftSectionDesc', 'Left Section Description'));
+
+        $fields->addFieldToTab('Root.AboutUsInformation', HeaderField::create('Right Section Information'));
         //right section image upload field
         $fields->addFieldToTab('Root.AboutUsInformation', $RightSectionImage = new UploadField('RightSectionImage','Right Section Image'));
         $fields->addFieldToTab('Root.AboutUsInformation', TextField::create('RightSectionTitle', 'Right Section Heading'));

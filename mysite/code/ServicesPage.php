@@ -46,19 +46,23 @@ class ServicesPage extends Page {
         $fields->removeByName('Metadata');
 
         //create page header input fields
+        $fields->addFieldToTab('Root.Main', HeaderField::create('Page Header Information'));
         $fields->addFieldToTab('Root.Main', TextField::create('PageHeader', 'Page Heading'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('PageSubHeader', 'Page Sub Heading'));
 
+        $fields->addFieldToTab('Root.Services', HeaderField::create('Service 1 Information'));
         //add image upload fields
         $fields->addFieldToTab('Root.Services', $ServiceImage1 = new UploadField('ServiceImage1','Service 1 Image'));
         $fields->addFieldToTab('Root.Services', TextField::create('ServiceHead1', 'Service 1 Title'));
         $fields->addFieldToTab('Root.Services', TextareaField::create('ServiceDesc1', 'Service 1 Description'));
 
+        $fields->addFieldToTab('Root.Services', HeaderField::create('Service 2 Information'));
         //add image upload fields
         $fields->addFieldToTab('Root.Services', $ServiceImage2 = new UploadField('ServiceImage2','Service 2 Image'));
         $fields->addFieldToTab('Root.Services', TextField::create('ServiceHead2', 'Service 2 Title'));
         $fields->addFieldToTab('Root.Services', TextareaField::create('ServiceDesc2', 'Service 2 Description'));
 
+        $fields->addFieldToTab('Root.Services', HeaderField::create('Service 3 Information'));
         //add image upload fields
         $fields->addFieldToTab('Root.Services', $ServiceImage3 = new UploadField('ServiceImage3','Service 3 Image'));
         $fields->addFieldToTab('Root.Services', TextField::create('ServiceHead3', 'Service 3 Title'));

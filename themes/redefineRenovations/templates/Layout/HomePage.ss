@@ -85,9 +85,6 @@
         <% loop $Categories %>
             <button class="btn btn-default filter" data-filter=".$ID">$Title</button>
         <% end_loop %>
-        <!--<button class="btn btn-default filter" data-filter="all">All</button>
-        <button class="btn btn-default filter" data-filter=".outdoors">Outdoors</button>
-        <button class="btn btn-default filter" data-filter=".indoors">Indoors</button>-->
     </div>
 
     <!--- main photo gallery --->

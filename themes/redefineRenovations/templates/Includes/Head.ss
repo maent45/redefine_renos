@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="$ThemeDir/css/about.css">
 
     <!--- font awesome --->
-    <link rel="stylesheet" href="$ThemeDir/css/font-awesome/css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="$ThemeDir/css/font-awesome/css/font-awesome.min.css">
 
     <!--- photo gallery plugin css --->
     <link rel="stylesheet" href="$ThemeDir/css/simplelightbox.min.css">
