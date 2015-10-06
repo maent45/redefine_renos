@@ -63,35 +63,6 @@
 
 </div>
 
-<!--- services section --->
-<div class="container">
-    <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 servicesSectionHeader">
-        <h2>Our Services</h2>
-        <div style="padding: 1px; background-color: gray; width: 20%; margin: auto; margin-bottom: 2%;"></div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 servicesSectionContainer">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <img src="images/service_01.jpg" class="img-responsive">
-            <h3>Home Renovations</h3>
-            <p>As the general contractor, we first create the highest level of trust and integrity with our clients. We value our role in the success of your project.</p>
-            <button class="btn btn-success">Read More</button>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <img src="images/service_02.jpg" class="img-responsive">
-            <h3>Planning & Consent</h3>
-            <p>As the general contractor, we first create the highest level of trust and integrity with our clients. We value our role in the success of your project.</p>
-            <button class="btn btn-success">Read More</button>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <img src="images/service_03.jpg" class="img-responsive">
-            <h3>Lanscaping</h3>
-            <p>As the general contractor, we first create the highest level of trust and integrity with our clients. We value our role in the success of your project.</p>
-            <button class="btn btn-success">Read More</button>
-        </div>
-    </div>-->
-
-</div>
-
 <!--- quote area --->
 <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 statementDiv" style="margin-top: 22%;">
@@ -110,9 +81,12 @@
 
     <!--- mixItUp plugin controls --->
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mixItUpControls">
-        <button class="btn btn-default filter" data-filter="all">All</button>
+        <% loop $Categories %>
+            <button class="btn btn-default filter" data-filter="all">$Title</button>
+        <% end_loop %>
+        <!--<button class="btn btn-default filter" data-filter="all">All</button>
         <button class="btn btn-default filter" data-filter=".outdoors">Outdoors</button>
-        <button class="btn btn-default filter" data-filter=".indoors">Indoors</button>
+        <button class="btn btn-default filter" data-filter=".indoors">Indoors</button>-->
     </div>
 
     <!--- main photo gallery --->

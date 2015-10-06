@@ -16,13 +16,21 @@ class FeaturedWork extends DataObject {
 
     private static $has_one = array (
         'ProjectCoverImage' => 'Image',
+        'FeaturedWorkCategory' => 'ProjectCategory',
         //name following relationship based on parent class
         'HomePage' => 'HomePage'
     );
 
+    //----------------------------------- --------------------------------------
+    /*private static $many_many = array (
+        'Categories' => 'ProjectCategory'
+    );*/
+    //----------------------------------- --------------------------------------
+
     //create GridField summary fields
     private static $summary_fields = array (
-        'GridThumbnail' => '',
+        'GridThumbnail' => 'Cover Image',
+        'FeaturedWorkCategory.Title' => 'Category',
         'ProjectTitle' => 'Title',
         'ProjectDate' => 'Completion Date'
     );
@@ -39,6 +47,7 @@ class FeaturedWork extends DataObject {
     //update GridField CMS interface
     public function getCMSFields() {
         $fields = FieldList::create(
+            $category = DropdownField::create('CategoryID','Category', ProjectCategory::get()->map('ID', 'Title')),
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
             TextareaField::create('ProjectBriefDesc', 'Brief Description'),
             TextField::create('ProjectTitle', 'Title'),

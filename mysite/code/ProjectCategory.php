@@ -18,6 +18,12 @@ class ProjectCategory extends DataObject {
         'HomePage' => 'HomePage'
     );
 
+    //--------------------------------------------
+    private static $belongs_many_many = array (
+        'Categories' => 'FeaturedWork'
+    );
+    //--------------------------------------------
+
     //update CMS interface
     public function getCMSFields() {
         return FieldList::create(
