@@ -51,7 +51,7 @@ class HomePage extends Page {
 
         //create Categories GridField
         $fields->addFieldToTab('Root.ProjectCategories', GridField::create(
-            //'Categories' relates to the
+            //'Categories' relates to the has_many relationship
             'Categories',
             'Project Categories',
             //$this->Categories() relates to the 'Categories' $has_many relationship
@@ -70,7 +70,7 @@ class HomePage extends Page {
 
         //add new fields to the CMS interface
         //CMS fields for services
-        $fields->addFieldToTab('Root.Main', HeaderField::create('Service Boxes'));
+        $fields->addFieldToTab('Root.Main', HeaderField::create('SERVICE BOXES'));
         $fields->addFieldToTab('Root.Main', TextField::create('ServiceTitle1', 'Left Service Title'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('ServiceDesc1', 'Left Service Description'));
         $fields->addFieldToTab('Root.Main', TextField::create('ServiceTitle2', 'Middle Service Title'));
@@ -79,7 +79,7 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.Main', TextareaField::create('ServiceDesc3', 'Right Service Description'));
 
         //CMS fields for quotes
-        $fields->addFieldToTab('Root.Main', HeaderField::create('Quote Areas'));
+        $fields->addFieldToTab('Root.Main', HeaderField::create('QUOTE AREAS'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('Quote1', 'First Quote'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('Quote2', 'Second Quote'));
 
