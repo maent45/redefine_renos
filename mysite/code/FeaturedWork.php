@@ -11,12 +11,21 @@ class FeaturedWork extends DataObject {
     private static $db = array (
         'ProjectBriefDesc' => 'Text',
         'ProjectTitle' => 'Varchar',
-        'ProjectDate' => 'Date'
+        'ProjectDate' => 'Date',
+
+        //db text fields for project phases descriptions
+        'ProjectPhaseDesc1' => 'Text',
+        'ProjectPhaseDesc2' => 'Text',
+        'ProjectPhaseDesc3' => 'Text',
+        'ProjectPhaseDesc4' => 'Text',
+        'ProjectPhaseDesc5' => 'Text',
+        'ProjectPhaseDesc6' => 'Text'
     );
 
     //set has_one relationships
     private static $has_one = array (
         'ProjectCoverImage' => 'Image',
+
         //images for project phases
         'ProjectPhaseImg1' => 'Image',
         'ProjectPhaseImg2' => 'Image',
@@ -24,7 +33,7 @@ class FeaturedWork extends DataObject {
         'ProjectPhaseImg4' => 'Image',
         'ProjectPhaseImg5' => 'Image',
         'ProjectPhaseImg6' => 'Image',
-
+        //following links ProjectCategory to FeaturedWork
         'FeaturedWorkCategory' => 'ProjectCategory',
         //name following relationship based on parent class
         'HomePage' => 'HomePage'
@@ -61,19 +70,27 @@ class FeaturedWork extends DataObject {
     //update GridField CMS interface
     public function getCMSFields() {
         $fields = FieldList::create(
+            HeaderField::create('Outer Captions'),
             $category = DropdownField::create('FeaturedWorkCategoryID','Category', ProjectCategory::get()->map('ID', 'Title')),
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
             TextareaField::create('ProjectBriefDesc', 'Brief Description'),
             TextField::create('ProjectTitle', 'Title'),
             DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy'),
+
+            HeaderField::create('Inner Captions'),
             //images for project phases upload fields
-            HeaderField::create('Project Phase Images'),
             $imgPhase1 = UploadField::create('ProjectPhaseImg1', 'Phase 1 Image'),
+            TextareaField::create('ProjectPhaseDesc1', 'Phase 1 Description'),
             $imgPhase2 = UploadField::create('ProjectPhaseImg2', 'Phase 2 Image'),
+            TextareaField::create('ProjectPhaseDesc2', 'Phase 2 Description'),
             $imgPhase3 = UploadField::create('ProjectPhaseImg3', 'Phase 3 Image'),
+            TextareaField::create('ProjectPhaseDesc3', 'Phase 3 Description'),
             $imgPhase4 = UploadField::create('ProjectPhaseImg4', 'Phase 4 Image'),
+            TextareaField::create('ProjectPhaseDesc4', 'Phase 4 Description'),
             $imgPhase5 = UploadField::create('ProjectPhaseImg5', 'Phase 5 Image'),
-            $imgPhase6 = UploadField::create('ProjectPhaseImg6', 'Phase 6 Image')
+            TextareaField::create('ProjectPhaseDesc5', 'Phase 5 Description'),
+            $imgPhase6 = UploadField::create('ProjectPhaseImg6', 'Phase 6 Image'),
+            TextareaField::create('ProjectPhaseDesc6', 'Phase 6 Description')
         );
 
         //create inner GridField for ProjectPhases images
