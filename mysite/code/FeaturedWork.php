@@ -65,7 +65,15 @@ class FeaturedWork extends DataObject {
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
             TextareaField::create('ProjectBriefDesc', 'Brief Description'),
             TextField::create('ProjectTitle', 'Title'),
-            DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy')
+            DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy'),
+            //images for project phases upload fields
+            HeaderField::create('Project Phase Images'),
+            $imgPhase1 = UploadField::create('ProjectPhaseImg1', 'Phase 1 Image'),
+            $imgPhase2 = UploadField::create('ProjectPhaseImg2', 'Phase 2 Image'),
+            $imgPhase3 = UploadField::create('ProjectPhaseImg3', 'Phase 3 Image'),
+            $imgPhase4 = UploadField::create('ProjectPhaseImg4', 'Phase 4 Image'),
+            $imgPhase5 = UploadField::create('ProjectPhaseImg5', 'Phase 5 Image'),
+            $imgPhase6 = UploadField::create('ProjectPhaseImg6', 'Phase 6 Image')
         );
 
         //create inner GridField for ProjectPhases images
@@ -82,6 +90,7 @@ class FeaturedWork extends DataObject {
         $imgUploadField->getValidator()->setAllowedExtensions(array(
             'png','gif','jpg','jpeg'
         ));
+
 
         //return the fields
         return $fields;
