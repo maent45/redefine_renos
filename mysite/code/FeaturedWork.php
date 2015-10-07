@@ -91,6 +91,41 @@ class FeaturedWork extends DataObject {
             'png','gif','jpg','jpeg'
         ));
 
+        //project phase img 1
+        $imgPhase1->setFolderName('Project Phase Images');
+        $imgPhase1->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpg','jpeg'
+        ));
+
+        //project phase img 2
+        $imgPhase2->setFolderName('Project Phase Images');
+        $imgPhase2->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpg','jpeg'
+        ));
+
+        //project phase img 3
+        $imgPhase3->setFolderName('Project Phase Images');
+        $imgPhase3->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpg','jpeg'
+        ));
+
+        //project phase img 4
+        $imgPhase4->setFolderName('Project Phase Images');
+        $imgPhase4->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpg','jpeg'
+        ));
+
+        //project phase img 5
+        $imgPhase5->setFolderName('Project Phase Images');
+        $imgPhase5->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpg','jpeg'
+        ));
+
+        //project phase img 6
+        $imgPhase6->setFolderName('Project Phase Images');
+        $imgPhase6->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpg','jpeg'
+        ));
 
         //return the fields
         return $fields;
