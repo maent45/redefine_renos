@@ -115,51 +115,107 @@
             <div class="modal-content">
                 <div class="container">
                     <h1>$ProjectTitle</h1>
-                    <h4>View this project's various phases from start to finish.</h4>
+                    <h4>$ProjectBriefDesc</h4>
                 </div>
                 <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
                 <div class="carousel slide mainGallerySlide" id="$ID">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
                         <div class="item active">
-                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
+                            <% if $ProjectPhaseImg1 %>
+                                <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+
+                            <% if $ProjectPhaseDesc1 %>
                             <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                <h4>First phase of this project was design.</h4>
+                                <h4>$ProjectPhaseDesc1</h4>
                             </div>
+                            <% end_if %>
                         </div>
                         <div class="item">
-                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                <h4>Second phase was actual implementation.</h4>
-                            </div>
+                            <% if $ProjectPhaseImg2 %>
+                                <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+
+                            <% if $ProjectPhaseDesc2 %>
+                                <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                    <h4>$ProjectPhaseDesc2</h4>
+                                </div>
+                            <% end_if %>
                         </div>
                         <div class="item">
-                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                <h4>Third phase was ...</h4>
-                            </div>
+                            <% if $ProjectPhaseImg3 %>
+                                <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+
+                            <% if $ProjectPhaseDesc3 %>
+                                <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                    <h4>$ProjectPhaseDesc3</h4>
+                                </div>
+                            <% end_if %>
                         </div>
                         <div class="item">
-                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                <h4>Fourth phase was ...</h4>
-                            </div>
+                            <% if $ProjectPhaseImg4 %>
+                                <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+
+                            <% if $ProjectPhaseDesc4 %>
+                                <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                    <h4>$ProjectPhaseDesc4</h4>
+                                </div>
+                            <% end_if %>
                         </div>
                     </div>
                     <!-- Indicators -->
                     <ol class="carousel-indicators mainGallerySlideImageIndicators">
-                        <li class="active" data-slide-to="0" data-target="#$ID">
-                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        </li>
-                        <li class="" data-slide-to="1" data-target="#$ID">
-                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        </li>
-                        <li class="" data-slide-to="2" data-target="#$ID">
-                            <img src="images/projects_01.jpg" class="img-responsive" title="Test Image">
-                        </li>
-                        <li class="" data-slide-to="3" data-target="#$ID">
-                            <img src="images/projects_03.jpg" class="img-responsive" title="Test Image">
-                        </li>
+
+                        <% if $ProjectPhaseImg1 %>
+                            <li class="active" data-slide-to="0" data-target="#$ID">
+                                <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
+                            </li>
+                        <% else %>
+                            <li class="active" data-slide-to="0" data-target="#$ID">
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            </li>
+                        <% end_if %>
+
+                        <% if $ProjectPhaseImg2 %>
+                            <li class="" data-slide-to="1" data-target="#$ID">
+                                <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
+                            </li>
+                        <% else %>
+                            <li class="active" data-slide-to="0" data-target="#$ID">
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            </li>
+                        <% end_if %>
+
+                        <% if $ProjectPhaseImg3 %>
+                            <li class="" data-slide-to="2" data-target="#$ID">
+                                <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
+                            </li>
+                        <% else %>
+                            <li class="active" data-slide-to="0" data-target="#$ID">
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            </li>
+                        <% end_if %>
+
+                        <% if $ProjectPhaseImg4 %>
+                            <li class="" data-slide-to="4" data-target="#$ID">
+                                <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
+                            </li>
+                        <% else %>
+                            <li class="active" data-slide-to="4" data-target="#$ID">
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            </li>
+                        <% end_if %>
                     </ol>
 
                     <!-- Controls -->
