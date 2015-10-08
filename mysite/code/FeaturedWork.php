@@ -73,12 +73,12 @@ class FeaturedWork extends DataObject {
             HeaderField::create('Outer Captions'),
             $category = DropdownField::create('FeaturedWorkCategoryID','Category', ProjectCategory::get()->map('ID', 'Title')),
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
-            TextareaField::create('ProjectBriefDesc', 'Brief Description'),
+            TextareaField::create('ProjectBriefDesc', 'Hover Over Description'),
             TextField::create('ProjectTitle', 'Title'),
             DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy'),
 
-            HeaderField::create('Inner Captions'),
-            //images for project phases upload fields
+            HeaderField::create('Project Phases'),
+            //images and descriptions for project phases
             $imgPhase1 = UploadField::create('ProjectPhaseImg1', 'Phase 1 Image'),
             TextareaField::create('ProjectPhaseDesc1', 'Phase 1 Description'),
             $imgPhase2 = UploadField::create('ProjectPhaseImg2', 'Phase 2 Image'),

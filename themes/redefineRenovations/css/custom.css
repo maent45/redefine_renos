@@ -225,8 +225,7 @@ html, body {
     height: 600px !important;
 }
 .mainGallerySlideImageIndicators{
-    width: 50% !important;
-    margin-left: 25% !important;
+    margin-left: 15% !important;
 }
 /* Indicators list style */
 .mainGallerySlideImageIndicators img{

@@ -173,49 +173,84 @@
                                 </div>
                             <% end_if %>
                         </div>
+                        <div class="item">
+                            <% if $ProjectPhaseImg5 %>
+                                <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+
+                            <% if $ProjectPhaseDesc5 %>
+                                <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                    <h4>$ProjectPhaseDesc5</h4>
+                                </div>
+                            <% end_if %>
+                        </div>
+                        <div class="item">
+                            <% if $ProjectPhaseImg6 %>
+                                <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+
+                            <% if $ProjectPhaseDesc6 %>
+                                <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                    <h4>$ProjectPhaseDesc6</h4>
+                                </div>
+                            <% end_if %>
+                        </div>
                     </div>
                     <!-- Indicators -->
                     <ol class="carousel-indicators mainGallerySlideImageIndicators">
 
-                        <% if $ProjectPhaseImg1 %>
-                            <li class="active" data-slide-to="0" data-target="#$ID">
+                        <li class="" data-slide-to="0" data-target="#$ID">
+                            <% if $ProjectPhaseImg1 %>
                                 <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
-                            </li>
-                        <% else %>
-                            <li class="active" data-slide-to="0" data-target="#$ID">
+                            <% else %>
                                 <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
-                            </li>
-                        <% end_if %>
+                            <% end_if %>
+                        </li>
 
-                        <% if $ProjectPhaseImg2 %>
-                            <li class="" data-slide-to="1" data-target="#$ID">
+                        <li class="" data-slide-to="1" data-target="#$ID">
+                            <% if $ProjectPhaseImg2 %>
                                 <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
-                            </li>
-                        <% else %>
-                            <li class="active" data-slide-to="0" data-target="#$ID">
+                            <% else %>
                                 <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
-                            </li>
-                        <% end_if %>
+                            <% end_if %>
+                        </li>
 
-                        <% if $ProjectPhaseImg3 %>
-                            <li class="" data-slide-to="2" data-target="#$ID">
+                        <li class="" data-slide-to="2" data-target="#$ID">
+                            <% if $ProjectPhaseImg3 %>
                                 <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
-                            </li>
-                        <% else %>
-                            <li class="active" data-slide-to="0" data-target="#$ID">
+                            <% else %>
                                 <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
-                            </li>
-                        <% end_if %>
+                            <% end_if %>
+                        </li>
 
-                        <% if $ProjectPhaseImg4 %>
-                            <li class="" data-slide-to="4" data-target="#$ID">
+                        <li class="" data-slide-to="3" data-target="#$ID">
+                            <% if $ProjectPhaseImg4 %>
                                 <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
-                            </li>
-                        <% else %>
-                            <li class="active" data-slide-to="4" data-target="#$ID">
+                            <% else %>
                                 <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
-                            </li>
-                        <% end_if %>
+                            <% end_if %>
+                        </li>
+
+                        <li class="" data-slide-to="4" data-target="#$ID">
+                            <% if $ProjectPhaseImg5 %>
+                                <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+                        </li>
+
+                        <li class="" data-slide-to="5" data-target="#$ID">
+                            <% if $ProjectPhaseImg6 %>
+                                <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
+                            <% else %>
+                                <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
+                            <% end_if %>
+                        </li>
+
                     </ol>
 
                     <!-- Controls -->
