@@ -283,67 +283,34 @@
                 <h4>What our clients are saying.</h4>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewsSectionContainer">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="col-lg-12 reviewBox">
-                        <h3>Bathroom renovation</h3>
-                        <i class="fa fa-calendar"></i>
-                        &nbsp;
-                        <span>6th July 2014</span>
-                        <br>
-                        <i class="fa fa-user"></i>
-                        &nbsp;
-                        <span>John Doe</span>
-                        <br><br>
-                        <p>"It's taken a while to write this review, but we are very happy with the great job Paul and his team of contractors did in renovating our bathroom. As customers, we were pretty demanding. Paul responded very professionally when any issues arose. Hopefully the photos show the great job that was done
-                            Work carried out by the owner & subcontractors"</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="col-lg-12 reviewBox">
-                        <h3>New Window</h3>
-                        <i class="fa fa-calendar"></i>
-                        &nbsp;
-                        <span>29th August 2015</span>
-                        <br>
-                        <i class="fa fa-user"></i>
-                        &nbsp;
-                        <span>John Doe</span>
-                        <br><br>
-                        <p>"Liked the solution they came up with to install the type of French doors we wanted. Came back to do finishing when asked.
-                            Work carried out by the owner & subcontractors"</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="col-lg-12 reviewBox">
-                        <h3>Resize window</h3>
-                        <i class="fa fa-calendar"></i>
-                        &nbsp;
-                        <span>12th August 2014</span>
-                        <br>
-                        <i class="fa fa-user"></i>
-                        &nbsp;
-                        <span>John Doe</span>
-                        <br><br>
-                        <p>"Very good. Would engage them again if required.
-                            Work carried out by the owner/operator"</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="col-lg-12 reviewBox">
-                        <h3>New Kitchen</h3>
-                        <i class="fa fa-calendar"></i>
-                        &nbsp;
-                        <span>7th July 2014</span>
-                        <br>
-                        <i class="fa fa-user"></i>
-                        &nbsp;
-                        <span>John Doe</span>
-                        <br><br>
-                        <p>"Paul and his team renovated my kitchen including regibbing, reroofing, moving a wall and flooring adn putting in the new ktichen. They did a fantastic job especially with teh complications e.g uneven flooring to begin with, I mis measured the kitchen unit so had to reorder and wait for new bits. Paul was lovely to deal with, completely professional and more than helpful. I would recommend him and his team to anyone.
-                            Work carried out by the owner/operator"</p>
-                    </div>
-                </div>
-
+                <!--- loop the reviews --->
+                <% if $Reviews %>
+                    <% loop $Reviews %>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 reviewBox">
+                                <% if $CustReviewTitle %>
+                                    <h3>$CustReviewTitle</h3>
+                                <% end_if %>
+                                <% if $CustReviewDate %>
+                                    <i class="fa fa-calendar"></i>
+                                    &nbsp;
+                                    <span>$CustReviewDate</span>
+                                    <br>
+                                <% end_if %>
+                                <% if $CustReviewName %>
+                                    <i class="fa fa-user"></i>
+                                    &nbsp;
+                                    <span>$CustReviewName</span>
+                                <% end_if %>
+                                <br><br>
+                                <% if $CustReview %>
+                                    <p>$CustReview</p>
+                                <% end_if %>
+                            </div>
+                        </div>
+                    <% end_loop %>
+                <% end_if %>
+                <!--- finish looping the Reviews Section --->
             </div>
         </div>
     </div>
