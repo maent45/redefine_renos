@@ -15,23 +15,31 @@ class ClientReviews extends DataObject {
 
     private static $db = array (
         //db fields for customer reviews section
-        'CustReviewTitle' => 'Text',
+        'CustReviewTitle' => 'Varchar',
         'CustReviewDate' => 'Date',
-        'CustReviewName' => 'Text',
-        'CustReview' => 'Varchar'
+        'CustReviewName' => 'Varchar',
+        'CustReview' => 'Text'
     );
 
     private static $has_one = array (
         'HomePage' => 'HomePage'
     );
 
+    //create summary fields to be shown on GridField
+    private static $summary_fields = array (
+        'CustReviewTitle' => 'Review Title',
+        'CustReviewDate' => 'Date',
+        'CustReviewName' => 'Client Name',
+        'CustReview' => 'Review'
+    );
+
     //update CMS interface and add GridField input fields
     public function getCMSFields() {
         return FieldList::create(
-            TextField::create('CustReviewTitle'),
-            DateField::create('CustReviewDate'),
-            TextField::create('CustReviewName'),
-            TextareaField::create('CustReview')
+            TextField::create('CustReviewTitle', 'Review Title'),
+            DateField::create('CustReviewDate', 'Review Date'),
+            TextField::create('CustReviewName', 'Client Name'),
+            TextareaField::create('CustReview', 'Client Review')
         );
     }
 }
