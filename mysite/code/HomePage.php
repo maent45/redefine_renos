@@ -27,17 +27,18 @@ class HomePage extends Page {
         'EmailAddress' => 'Varchar',
 
         //temporary db fields for customer reviews section
-        'CustReviewTitle' => 'Text',
+        /*'CustReviewTitle' => 'Text',
         'CustReviewDate' => 'Date',
         'CustReviewName' => 'Text',
-        'CustReview' => 'Varchar'
+        'CustReview' => 'Varchar'*/
     );
 
     //set $has_many relationship
     private static $has_many = array (
         'SlideShows' => 'SlideShow',
         'Categories' => 'ProjectCategory',
-        'FeaturedWorks' => 'FeaturedWork'
+        'FeaturedWorks' => 'FeaturedWork',
+        'Reviews' => 'ClientReviews'
     );
 
     //updating the CMS interface
@@ -74,6 +75,14 @@ class HomePage extends Page {
             GridFieldConfig_RecordEditor::create()
         ));
 
+        //create Reviews Section GridField
+        $fields->addFieldToTab('Root.ClientReviews', GridField::create(
+            'Reviews',
+            'Client Reviews',
+            $this->Reviews(),
+            GridFieldConfig_RecordEditor::create()
+        ));
+
         //add new fields to the CMS interface
         //CMS fields for services
         $fields->addFieldToTab('Root.Main', HeaderField::create('SERVICE BOXES'));
@@ -88,6 +97,12 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.Main', HeaderField::create('QUOTE AREAS'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('Quote1', 'First Quote'));
         $fields->addFieldToTab('Root.Main', TextareaField::create('Quote2', 'Second Quote'));
+
+        //CMS fields for Reviews Section
+        /*$fields->addFieldToTab('Root.ClientReviews', TextField::create('CustReviewTitle', 'Review Title'));
+        $fields->addFieldToTab('Root.ClientReviews', TextField::create('CustReviewDate', 'Review Date'));
+        $fields->addFieldToTab('Root.ClientReviews', TextField::create('CustReviewName', 'Client Name'));
+        $fields->addFieldToTab('Root.ClientReviews', TextareaField::create('CustReview', 'Client Review'));*/
 
         //CMS fields for Footer contact details
         $fields->addFieldToTab('Root.Footer', TextField::create('PhoneNumber', 'Phone Number'));
