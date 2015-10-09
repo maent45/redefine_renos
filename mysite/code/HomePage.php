@@ -24,7 +24,13 @@ class HomePage extends Page {
 
         //db fields for Footer section
         'PhoneNumber' => 'Varchar',
-        'EmailAddress' => 'Varchar'
+        'EmailAddress' => 'Varchar',
+
+        //temporary db fields for customer reviews section
+        'CustReviewTitle' => 'Text',
+        'CustReviewDate' => 'Date',
+        'CustReviewName' => 'Text',
+        'CustReview' => 'Varchar'
     );
 
     //set $has_many relationship
