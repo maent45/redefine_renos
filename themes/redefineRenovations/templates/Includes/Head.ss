@@ -15,8 +15,8 @@
     <!--- call about page css --->
     <link rel="stylesheet" href="$ThemeDir/css/about.css">
 
-    <!--- font awesome --->
-    <link rel="stylesheet" href="$ThemeDir/css/font-awesome/css/font-awesome.min.css">
+    <!--- font awesome cdn --->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
 
     <!--- photo gallery plugin css --->
     <link rel="stylesheet" href="$ThemeDir/css/simplelightbox.min.css">

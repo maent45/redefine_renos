@@ -294,7 +294,7 @@
                                 <% if $CustReviewDate %>
                                     <i class="fa fa-calendar"></i>
                                     &nbsp;
-                                    <span>$CustReviewDate</span>
+                                    <span>$CustReviewDate.Nice</span>
                                     <br>
                                 <% end_if %>
                                 <% if $CustReviewName %>
@@ -304,7 +304,7 @@
                                 <% end_if %>
                                 <br><br>
                                 <% if $CustReview %>
-                                    <p>$CustReview</p>
+                                    <p><span style="font-weight: 900 !important; color: #000;">"</span>$CustReview<span style="font-weight: 900 !important; color: #000">"</span></p>
                                 <% end_if %>
                             </div>
                         </div>

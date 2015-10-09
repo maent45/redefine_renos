@@ -37,7 +37,7 @@ class ClientReviews extends DataObject {
     public function getCMSFields() {
         return FieldList::create(
             TextField::create('CustReviewTitle', 'Review Title'),
-            DateField::create('CustReviewDate', 'Review Date'),
+            DateField::create('CustReviewDate','Review Date'),
             TextField::create('CustReviewName', 'Client Name'),
             TextareaField::create('CustReview', 'Client Review')
         );

@@ -11,3 +11,6 @@ SSViewer:
   theme: 'redefineRenovations'
 GDBackend:
     default_quality: 90
+DateField:
+  default_config:
+    showcalendar: true
