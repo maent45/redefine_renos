@@ -207,48 +207,36 @@
                             <li class="" data-slide-to="0" data-target="#$ID">
                                 <% if $ProjectPhaseImg1 %>
                                     <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
                             </li>
 
                             <li class="" data-slide-to="1" data-target="#$ID">
                                 <% if $ProjectPhaseImg2 %>
                                     <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
                             </li>
 
                             <li class="" data-slide-to="2" data-target="#$ID">
                                 <% if $ProjectPhaseImg3 %>
                                     <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
                             </li>
 
                             <li class="" data-slide-to="3" data-target="#$ID">
                                 <% if $ProjectPhaseImg4 %>
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
                             </li>
 
                             <li class="" data-slide-to="4" data-target="#$ID">
                                 <% if $ProjectPhaseImg5 %>
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
                             </li>
 
                             <li class="" data-slide-to="5" data-target="#$ID">
                                 <% if $ProjectPhaseImg6 %>
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
                             </li>
 
@@ -270,7 +258,7 @@
 
 <!--- quote area --->
 <div class="container">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 statementDiv">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 statementDiv" style="margin-top: 5%;">
         <h2>"$Quote2"</h2>
     </div>
 </div>
