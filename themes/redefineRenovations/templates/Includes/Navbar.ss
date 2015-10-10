@@ -1,17 +1,17 @@
 <!--- top logo section --->
-<div class="col-lg-12 topLogoHolder" style="background-color: #333;">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 topLogoHolder" style="background-color: #333;">
     <div class="container">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <a class="navbar-brand" href="$AbsoluteBaseURL">
                 <img src="$ThemeDir/images/logo/trans_log.png" class="img-responsive" width="330">
             </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <i class="fa fa-envelope"></i>
             &nbsp;
             <span>info@redefinerenos.com</span>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <i class="fa fa-phone" style="font-size: 1.9em !important; margin-top: 19%;"></i>
             &nbsp;
             <span>123-456-789</span>
