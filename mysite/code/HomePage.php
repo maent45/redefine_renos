@@ -105,8 +105,8 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.ClientReviews', TextareaField::create('CustReview', 'Client Review'));*/
 
         //CMS fields for Footer contact details
-        $fields->addFieldToTab('Root.Footer', TextField::create('PhoneNumber', 'Phone Number'));
-        $fields->addFieldToTab('Root.Footer', TextField::create('EmailAddress', 'Email Address'));
+        /*$fields->addFieldToTab('Root.Footer', TextField::create('PhoneNumber', 'Phone Number'));
+        $fields->addFieldToTab('Root.Footer', TextField::create('EmailAddress', 'Email Address'));*/
 
         //create read-only fields
         $fields->addFieldToTab('Root.Metadata', new ReadonlyField('URLSegment', 'URL'));

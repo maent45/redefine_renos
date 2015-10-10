@@ -214,9 +214,6 @@ html, body {
 .modal-backdrop.in{
     opacity: 0.8 !important;
 }
-.mainGallerySlide{
-    background-color: red;
-}
 .mainGallerySlideInnerImages img{
     width: 100%;
     height: 600px !important;

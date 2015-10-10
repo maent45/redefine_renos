@@ -21,12 +21,12 @@
             <div style="padding: 1px; background-color: #333; width: 20%; margin-bottom: 5%;"></div>
             <i class="fa fa-phone"></i>
         <span class="pull-right">
-            $PhoneNumber
+            123-456-789
         </span>
             <br><br>
             <i class="fa fa-envelope"></i>
         <span class="pull-right">
-            $EmailAddress
+            info@redefinerenos.com
         </span>
         </div>
 

@@ -113,10 +113,17 @@
         <div class="modal fade $ID" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="container">
-                        <h1>$ProjectTitle</h1>
-                        <h4>$ProjectBriefDesc</h4>
+                    <div class="modal-header" style="padding-bottom: 5%;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2em; color: #222;">&times;</span></button>
+                        <h1 class="modal-title">$ProjectTitle</h1>
+                        <h4 class="pull-left">$ProjectBriefDesc</h4>
                     </div>
+                    <!--<div class="container">
+                        <h1 class="modal-title">$ProjectTitle</h1>
+                        <i class="fa fa-close" style="color: #222; font-size: 2em;"></i>
+                        <br/><br/>
+                        <h4 class="pull-left">$ProjectBriefDesc</h4>
+                    </div>-->
                     <!--- source code for following carousel obtained from http://bootsnipp.com/snippets/featured/article-carousel-with-images-indicators --->
                     <div class="carousel slide mainGallerySlide" id="$ID">
                         <!-- Wrapper for slides -->
