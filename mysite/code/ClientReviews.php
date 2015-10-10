@@ -21,6 +21,7 @@ class ClientReviews extends DataObject {
         'CustReview' => 'Text'
     );
 
+    //declare parent page
     private static $has_one = array (
         'HomePage' => 'HomePage'
     );
