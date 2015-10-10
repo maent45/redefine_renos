@@ -5,7 +5,7 @@ silverstripe-cache
 .buildpath
 .project
 .settings
-.idea
+.idea/
 .DS_Store
 vendor/
 /mysite/_config.php
