@@ -1,14 +1,9 @@
 {
-	"name": "silverstripe/installer",
-	"description": "The SilverStripe Framework Installer",
+	"name": "maent45/redefine_renos",
 	"require": {
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.1.15",
-		"silverstripe/framework": "3.1.15",
-		"silverstripe-themes/simple": "*"
-	},
-	"require-dev": {
-		"phpunit/PHPUnit": "~3.7@stable"
+		"silverstripe/framework": "3.1.15"
 	},
 	"config": {
 		"process-timeout": 600
