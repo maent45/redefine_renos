@@ -65,7 +65,7 @@
 
 <!--- quote area --->
 <div class="container">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 statementDiv" style="margin-top: 15%">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 topStatementDiv statementDiv">
         <h2>"$Quote1"</h2>
     </div>
 </div>

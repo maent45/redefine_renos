@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (max-width: 610px) {
+    .topLogoHolder i{
+        font-size: 1.5em;
+        color: whitesmoke;
+        margin-top: 1% !important;
+        margin-left: 5%;
+    }
+    .threeBoxesContainer{
+        position: absolute;
+        top: 60%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        height: auto; !important;
+        width: 90%;
+        margin: auto;
+        margin-bottom: auto !important;
+    }
+    .topStatementDiv{
+        margin-top: 80% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topLogoHolder i{
+        font-size: 1.5em;
+        color: whitesmoke;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .threeBoxesContainer{
+        position: absolute;
+        top: 60%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        height: auto; !important;
+        width: 90%;
+        margin: auto;
+        margin-bottom: auto !important;
+    }
+    .topStatementDiv{
+        margin-top: 80% !important;
+    }
+}

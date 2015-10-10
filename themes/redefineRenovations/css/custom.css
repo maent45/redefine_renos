@@ -128,9 +128,11 @@ html, body {
 }
 
 /*--- company statement css ---*/
+.topStatementDiv{
+    margin-top: 15% !important;
+}
 .statementDiv{
     background-color: #449d44;
-    margin-top: 5%;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 5%;

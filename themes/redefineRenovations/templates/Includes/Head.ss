@@ -10,6 +10,7 @@
     <!--- css links --->
     <link rel="stylesheet" href="$ThemeDir/css/bootstrap.min.css">
     <link rel="stylesheet" href="$ThemeDir/css/custom.css">
+    <link rel="stylesheet" href="$ThemeDir/css/mediaQueries.css">
     <!--- call services page css --->
     <link rel="stylesheet" href="$ThemeDir/css/services.css">
     <!--- call about page css --->
