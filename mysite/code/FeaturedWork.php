@@ -147,4 +147,21 @@ class FeaturedWork extends DataObject {
         //return the fields
         return $fields;
     }
+
+    //allow content authors to view
+    function canView($member = null) {
+        return true;
+    }
+    //allow create
+    function canCreate($member = null) {
+        return true;
+    }
+    //allow edit
+    function canEdit($member = null) {
+        return true;
+    }
+    //allow delete
+    function canDelete($member = null) {
+        return true;
+    }
 }
