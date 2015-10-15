@@ -24,5 +24,17 @@ class BuildersCrack extends DataExtension {
 	{
 
 	}
+
+	public function getReviews($name = 'testing')
+	{
+		//pass the data to the buildersReview
+		$data = new ArrayData(
+			array(
+				'name' => $name
+			)
+		);
+
+		return $data->renderWith('buildersReview');
+	}
 	
 }
