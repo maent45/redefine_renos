@@ -1,7 +1,7 @@
 <?php
 
 class BuildersCrack extends DataExtension {
-	
+
 	protected static $url = "https://builderscrack.co.nz/";	//url of the review to be scrapped
 	protected static $sandBox = false;
 
@@ -27,14 +27,27 @@ class BuildersCrack extends DataExtension {
 
 	public function getReviews($name = 'testing')
 	{
+		$html = new simple_html_dom();
+
+		//get page source
+		//$source = $this->downloadReview();
+
 		//pass the data to the buildersReview
 		$data = new ArrayData(
 			array(
-				'name' => $name
+				'Name' => 'ignore this just testing'
 			)
 		);
 
 		return $data->renderWith('buildersReview');
+	}
+
+	/**
+	 * @return string contain contents of review
+	 */
+	public function downloadReview()
+	{
+		return file_get_contents(self::$url);
 	}
 	
 }
