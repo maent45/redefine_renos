@@ -46,7 +46,7 @@ class BuildersCrack_Page extends Page
 
 	//set $has_many relationship
 	private static $has_many = array(
-		'ClientReviews' => 'Reviews'
+		'Reviews' => 'JobReviews'
 	);
 
 	//updating the CMS interface
@@ -56,10 +56,17 @@ class BuildersCrack_Page extends Page
 		$fields = parent::getCMSFields();
 		//create Reviews Section GridField
 		$fields->addFieldToTab('Root.Reviews', GridField::create(
-			'ClientReviews',
+			'Reviews',
 			'Client Reviews',
-			$this->ClientReviews(),
+			$this->Reviews(),
 			GridFieldConfig_RecordEditor::create()
 		));
+
+		return $fields;
 	}
+}
+
+class BuildersCrack_Controller extends Page_Controller
+{
+
 }
