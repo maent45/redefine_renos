@@ -38,3 +38,28 @@ class BuildersCrack extends DataExtension {
 	}
 	
 }
+
+class BuildersCrack_Page extends Page
+{
+
+	private static $db = array();
+
+	//set $has_many relationship
+	private static $has_many = array(
+		'ClientReviews' => 'Reviews'
+	);
+
+	//updating the CMS interface
+	public function getCMSFields()
+	{
+		//declare var $fields
+		$fields = parent::getCMSFields();
+		//create Reviews Section GridField
+		$fields->addFieldToTab('Root.Reviews', GridField::create(
+			'ClientReviews',
+			'Client Reviews',
+			$this->ClientReviews(),
+			GridFieldConfig_RecordEditor::create()
+		));
+	}
+}
