@@ -12,6 +12,12 @@
     .topStatementDiv{
         display: none;
     }
+    .carousel-caption{
+        margin-bottom: 20% !important;
+    }
+    .mainGallerySlideImageIndicators{
+        margin-left: 7% !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -26,6 +32,12 @@
     }
     .copyRightText{
         margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .carousel-caption{
+        margin-bottom: 25% !important;
     }
 }
 
