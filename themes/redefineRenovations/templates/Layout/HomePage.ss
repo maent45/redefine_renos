@@ -31,7 +31,7 @@
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainDiv">
     <!--- main banner --->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide testCarousel" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <% loop $SlideShows %>
