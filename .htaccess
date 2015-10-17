@@ -25,8 +25,8 @@ ErrorDocument 500 /assets/error-500.html
 <IfModule mod_rewrite.c>
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
-	RewriteBase '/Development_Projects/redefine_renos'
-
+	#RewriteBase '/Development_Projects/redefine_renos'
+RewriteBase /
 	
 
 	# Deny access to potentially sensitive files and folders
