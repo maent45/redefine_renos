@@ -93,15 +93,13 @@ html, body {
 
 /*--- test Divs ---*/
 .mainDiv{
-    background-color: red;
     height: auto !important;
     position: relative;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 .testCarousel{
-    position: relative;
-    z-index: 1 !important;
+
 }
 .testCarouselDiv{
     background-color: yellow;
@@ -109,9 +107,9 @@ html, body {
 }
 .testServicesDiv{
     background-color: green;
-    position: relative !important;
+    position: absolute !important;
     z-index: 9 !important;
-    top: 0;
+    top: 50% !important;
     height: auto;
     padding-bottom: 2%;
     margin-bottom: 2% !important;
@@ -124,9 +122,16 @@ html, body {
 
 /*--- three boxes css ---*/
 .threeBoxesContainer{
-    margin-top: 3% !important;
-    background-color: red;
-    height: auto; !important;
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-bottom: auto !important;
 }
 .threeBoxesContainer button{
     margin-top: 6%;
@@ -152,7 +157,8 @@ html, body {
 
 /*--- company statement css ---*/
 .topStatementDiv{
-    position: relative !important;
+    margin-top: 15%;
+    position: static !important;
     background-color: #449d44;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;

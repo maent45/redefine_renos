@@ -25,15 +25,46 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <!--- three boxes section --->
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 threeBoxesContainer">
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3>$ServiceTitle1</h3>
+                    <p>$ServiceDesc1</p>
+                    <button class="btn btn-success"><a href="#">READ MORE</a></button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3>$ServiceTitle2</h3>
+                    <p>$ServiceDesc2</p>
+                    <button class="btn btn-success"><a href="#">READ MORE</a></button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3>$ServiceTitle3</h3>
+                    <p>$ServiceDesc3</p>
+                    <button class="btn btn-success"><a href="#">READ MORE</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <!---------------------------------------------------------------------------------------------------------->
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainDiv">
+<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainDiv">
     <!--- main banner --->
-    <div id="carousel-example-generic" class="carousel slide testCarousel" data-ride="carousel">
+    <!--<div id="carousel-example-generic" class="carousel slide testCarousel" data-ride="carousel">-->
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <!--<div class="carousel-inner" role="listbox">
             <% loop $SlideShows %>
                 <% if Pos = 1 %>
                     <div class="item active img-responsive">
@@ -44,9 +75,9 @@
                         $SlideShowImage.CroppedImage(1583,460)
                     </div>
                 <% end_if %>
-            <% end_loop %>
+            <% end_loop %>-->
         </div>
-        <!-- Carousel Controls -->
+        <!-- Carousel Controls
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -78,38 +109,7 @@
             </div>
         </div>
     </div>
-</div>
-
-<!--- three boxes section
-<div class="container">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 threeBoxesContainer">
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>$ServiceTitle1</h3>
-                <p>$ServiceDesc1</p>
-                <button class="btn btn-success"><a href="#">READ MORE</a></button>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>$ServiceTitle2</h3>
-                <p>$ServiceDesc2</p>
-                <button class="btn btn-success"><a href="#">READ MORE</a></button>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>$ServiceTitle3</h3>
-                <p>$ServiceDesc3</p>
-                <button class="btn btn-success"><a href="#">READ MORE</a></button>
-            </div>
-        </div>
-
-    </div>
-</div>--->
+</div>-->
 
 <!--- quote area --->
 <div class="container">
