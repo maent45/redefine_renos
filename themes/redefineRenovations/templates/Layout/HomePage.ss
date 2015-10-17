@@ -6,11 +6,11 @@
             <% loop $SlideShows %>
                 <% if Pos = 1 %>
                     <div class="item active img-responsive">
-                        $SlideShowImage.CroppedImage(1700,600)
+                        $SlideShowImage.CroppedImage(1700,630)
                     </div>
                 <% else %>
                     <div class="item img-responsive">
-                        $SlideShowImage.CroppedImage(1700,600)
+                        $SlideShowImage.CroppedImage(1700,630)
                     </div>
                 <% end_if %>
             <% end_loop %>
@@ -181,8 +181,6 @@
                             <div class="item active">
                                 <% if $ProjectPhaseImg1 %>
                                     <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
 
                                 <% if $ProjectPhaseDesc1 %>
@@ -194,8 +192,6 @@
                             <div class="item">
                                 <% if $ProjectPhaseImg2 %>
                                     <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
 
                                 <% if $ProjectPhaseDesc2 %>
@@ -207,8 +203,6 @@
                             <div class="item">
                                 <% if $ProjectPhaseImg3 %>
                                     <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
 
                                 <% if $ProjectPhaseDesc3 %>
@@ -220,8 +214,6 @@
                             <div class="item">
                                 <% if $ProjectPhaseImg4 %>
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
 
                                 <% if $ProjectPhaseDesc4 %>
@@ -233,8 +225,6 @@
                             <div class="item">
                                 <% if $ProjectPhaseImg5 %>
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
 
                                 <% if $ProjectPhaseDesc5 %>
@@ -246,8 +236,6 @@
                             <div class="item">
                                 <% if $ProjectPhaseImg6 %>
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <img src="$ThemeDir/images/No_Image.jpg" class="img-responsive" title="Test Image">
                                 <% end_if %>
 
                                 <% if $ProjectPhaseDesc6 %>
@@ -300,12 +288,14 @@
                         </ol>
 
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#$ID" role="button" data-slide="prev">
-                            <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                        </a>
-                        <a class="right carousel-control" href="#$ID" role="button" data-slide="next">
-                            <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                        </a>
+                        <% if $ProjectPhaseImg1 %>
+                            <a class="left carousel-control" href="#$ID" role="button" data-slide="prev">
+                                <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
+                            </a>
+                            <a class="right carousel-control" href="#$ID" role="button" data-slide="next">
+                                <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
+                            </a>
+                        <% end_if %>
                     </div>
                 </div>
             </div>

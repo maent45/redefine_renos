@@ -118,7 +118,7 @@ html, body {
 
 /*--- three boxes css ---*/
 .threeBoxesContainer{
-    top: 85%;
+    top: 78%;
     left: 0;
     right: 0;
     position: absolute;
@@ -209,6 +209,7 @@ html, body {
     background-color: lightgray;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
+    border-top: 1px solid gray;
     border-bottom: 1px solid grey;
 }
     /*--- image hover effect css ---*/
