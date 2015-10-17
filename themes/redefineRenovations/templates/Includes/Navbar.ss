@@ -44,6 +44,7 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#contactFormModal1">CONTACT</a></li>-->
                 <% end_loop %>
+                <li><a href="#" data-toggle="modal" data-target="#contactFormModal1">Contact Us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

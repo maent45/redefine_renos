@@ -1,7 +1,6 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bannerAndServicesWrapper">
     <!--- main banner --->
     <div id="carousel-example-generic" class="carousel slide bannerCarousel" data-ride="carousel">
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <% loop $SlideShows %>
@@ -16,8 +15,7 @@
                 <% end_if %>
             <% end_loop %>
         </div>
-
-        <!-- Controls -->
+        <!-- Carousel Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -27,45 +25,95 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+</div>
 
-    <!--- three boxes section --->
-    <div class="row">
+<!---------------------------------------------------------------------------------------------------------->
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainDiv">
+    <!--- main banner --->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <% loop $SlideShows %>
+                <% if Pos = 1 %>
+                    <div class="item active img-responsive">
+                        $SlideShowImage.CroppedImage(1583,460)
+                    </div>
+                <% else %>
+                    <div class="item img-responsive">
+                        $SlideShowImage.CroppedImage(1583,460)
+                    </div>
+                <% end_if %>
+            <% end_loop %>
+        </div>
+        <!-- Carousel Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 testServicesDiv">
         <div class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 threeBoxesContainer">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
+                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
+                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
 
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h3>$ServiceTitle1</h3>
-                        <p>$ServiceDesc1</p>
-                        <button class="btn btn-success"><a href="#">READ MORE</a></button>
-                    </div>
                 </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h3>$ServiceTitle2</h3>
-                        <p>$ServiceDesc2</p>
-                        <button class="btn btn-success"><a href="#">READ MORE</a></button>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
                 </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h3>$ServiceTitle3</h3>
-                        <p>$ServiceDesc3</p>
-                        <button class="btn btn-success"><a href="#">READ MORE</a></button>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
                 </div>
-
             </div>
         </div>
     </div>
-
 </div>
+
+<!--- three boxes section
+<div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 threeBoxesContainer">
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>$ServiceTitle1</h3>
+                <p>$ServiceDesc1</p>
+                <button class="btn btn-success"><a href="#">READ MORE</a></button>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>$ServiceTitle2</h3>
+                <p>$ServiceDesc2</p>
+                <button class="btn btn-success"><a href="#">READ MORE</a></button>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 threeBoxesInner">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>$ServiceTitle3</h3>
+                <p>$ServiceDesc3</p>
+                <button class="btn btn-success"><a href="#">READ MORE</a></button>
+            </div>
+        </div>
+
+    </div>
+</div>--->
 
 <!--- quote area --->
 <div class="container">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 topStatementDiv statementDiv">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 topStatementDiv">
         <h2>"$Quote1"</h2>
     </div>
 </div>

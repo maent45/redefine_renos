@@ -80,7 +80,6 @@ html, body {
 
 /*--- main banner css ---*/
 .bannerCarousel{
-    position: relative;
     height: 100%;
 }
 .item{
@@ -92,18 +91,36 @@ html, body {
     width: 100%;
 }
 
+/*--- test Divs ---*/
+.mainDiv{
+    background-color: red;
+    height: auto !important;
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.testCarouselDiv{
+    background-color: yellow;
+    padding: 2%;
+}
+.testServicesDiv{
+    background-color: green;
+    top: 60%;
+    height: auto;
+    padding-bottom: 2%;
+    margin-bottom: 2% !important;
+}
+.testServicesDiv div > div{
+    background-color: orange;
+    margin-top: 1%;
+    height: auto;
+}
+
 /*--- three boxes css ---*/
 .threeBoxesContainer{
-    position: absolute;
-    top: 75%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
+    margin-top: 3% !important;
+    background-color: red;
     height: auto; !important;
-    width: 90%;
-    margin: auto;
-    margin-bottom: auto !important;
 }
 .threeBoxesContainer button{
     margin-top: 6%;
@@ -129,7 +146,12 @@ html, body {
 
 /*--- company statement css ---*/
 .topStatementDiv{
-    margin-top: 15% !important;
+    position: relative !important;
+    background-color: #449d44;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5%;
+    font-style: italic;
 }
 .statementDiv{
     background-color: #449d44;
