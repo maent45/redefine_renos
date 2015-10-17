@@ -312,6 +312,7 @@
 
 <!--- reviews section --->
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewsSectionWrapper">
+
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewsSection">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewsHeader">
@@ -321,6 +322,31 @@
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewsSectionContainer">
                 <!--- loop the reviews --->
+                <% loop $getReviews("false") %>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewBox">
+                            <% if $title %>
+                                <h3>$title</h3>
+                            <% end_if %>
+                            <% if $date %>
+                                <i class="fa fa-calendar"></i>
+                                &nbsp;
+                                <span>$date</span>
+                                <br>
+                            <% end_if %>
+                            <% if $CustReviewName %>
+                                <i class="fa fa-user"></i>
+                                &nbsp;
+                                <span>$CustReviewName</span>
+                            <% end_if %>
+                            <br><br>
+                            <% if $comment %>
+                                <p><span style="font-weight: 900 !important; color: #000;">"</span>$comment<span style="font-weight: 900 !important; color: #000">"</span></p>
+                            <% end_if %>
+                        </div>
+                    </div>
+                <% end_loop %>
+
                 <% if $Reviews %>
                     <% loop $Reviews %>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">

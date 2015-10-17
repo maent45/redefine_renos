@@ -9,4 +9,5 @@ silverstripe-cache
 .DS_Store
 vendor/
 /mysite/_config.php
+.htaccess
 
