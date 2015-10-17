@@ -7,11 +7,11 @@
                 <h3 class="modal-title" id="myModalLabel" style="color: #009C2F;">Enquiry Form</h3>
                 <i class="fa fa-envelope" style="margin-top: 2%; font-size: 1.8em;"></i>
                 &nbsp;
-                <span>info@redefinerenos.com</span>
+                <span>$EmailAddress</span>
                 &nbsp;
                 <i class="fa fa-phone" style="font-size: 1.9em !important; margin-top: 2%;"></i>
                 &nbsp;
-                <span>123-456-789</span>
+                <span>$PhoneNumber</span>
                 <h5 style="margin-top: 2%;">Contact us directly or leave us a message and we'll get in touch shortly.</h5>
             </div>
             <form name="contactForm" onsubmit="return validateContactForm()" method="post">

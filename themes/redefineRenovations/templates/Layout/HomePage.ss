@@ -1,16 +1,16 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bannerAndServicesWrapper">
     <!--- main banner --->
     <div id="carousel-example-generic" class="carousel slide bannerCarousel" data-ride="carousel">
-        <!-- Wrapper for slides -->
+        <!-- Wrapper for slides //.CroppedImage(1700,600) -->
         <div class="carousel-inner" role="listbox">
             <% loop $SlideShows %>
                 <% if Pos = 1 %>
                     <div class="item active img-responsive">
-                        $SlideShowImage.CroppedImage(1583,460)
+                        $SlideShowImage.CroppedImage(1700,600)
                     </div>
                 <% else %>
                     <div class="item img-responsive">
-                        $SlideShowImage.CroppedImage(1583,460)
+                        $SlideShowImage.CroppedImage(1700,600)
                     </div>
                 <% end_if %>
             <% end_loop %>
@@ -140,7 +140,7 @@
 
         <!--- loop over all FeaturedWorks --->
         <% loop $FeaturedWorks %>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix $FeaturedWorkCategoryID">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mix $FeaturedWorkCategoryID">
                 <div class="col-lg-12 imageHoverEffect">
                     <h4 style="color: white; margin-top: 30%;">$ProjectBriefDesc</h4>
                     <% if $ProjectPhaseImg1 %>

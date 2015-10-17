@@ -22,7 +22,8 @@ class HomePage extends Page {
         'Quote1' => 'Text',
         'Quote2' => 'Text',
 
-        //db fields for Footer section
+        //db fields for Contact Details
+        'ContactMenuTitle' => 'Varchar',
         'PhoneNumber' => 'Varchar',
         'EmailAddress' => 'Varchar',
 
@@ -104,9 +105,10 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.ClientReviews', TextField::create('CustReviewName', 'Client Name'));
         $fields->addFieldToTab('Root.ClientReviews', TextareaField::create('CustReview', 'Client Review'));*/
 
-        //CMS fields for Footer contact details
-        /*$fields->addFieldToTab('Root.Footer', TextField::create('PhoneNumber', 'Phone Number'));
-        $fields->addFieldToTab('Root.Footer', TextField::create('EmailAddress', 'Email Address'));*/
+        //CMS fields for Contact details ContactMenuTitle
+        $fields->addFieldToTab('Root.ContactInfo', TextField::create('ContactMenuTitle', 'Contact Form Menu Title'));
+        $fields->addFieldToTab('Root.ContactInfo', TextField::create('PhoneNumber', 'Phone Number'));
+        $fields->addFieldToTab('Root.ContactInfo', TextField::create('EmailAddress', 'Email Address'));
 
         //create read-only fields
         $fields->addFieldToTab('Root.Metadata', new ReadonlyField('URLSegment', 'URL'));
