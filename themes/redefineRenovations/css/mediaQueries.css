@@ -1,28 +1,16 @@
-@media screen and (min-width: 768px){
-
+@media screen and (max-width: 1087px){
+    .topStatementDiv{
+        margin-top: 25%;
+    }
 }
 
-@media screen and (max-width: 610px) {
-    .topLogoHolder i{
-        font-size: 1.5em;
-        color: whitesmoke;
-        margin-top: 1% !important;
-        margin-left: 5%;
-    }
+@media screen and (max-width: 993px){
     .threeBoxesContainer{
-        position: absolute;
-        top: 60%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 99999;
-        height: auto; !important;
-        width: 90%;
-        margin: auto;
-        margin-bottom: auto !important;
+        width: 100%;
+        position: static;
     }
     .topStatementDiv{
-        margin-top: 80% !important;
+        display: none;
     }
 }
 
@@ -33,19 +21,23 @@
         margin-top: 5%;
         margin-left: 5%;
     }
-    .threeBoxesContainer{
-        position: absolute;
-        top: 60%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 99999;
-        height: auto; !important;
-        width: 90%;
-        margin: auto;
-        margin-bottom: auto !important;
-    }
     .topStatementDiv{
         margin-top: 80% !important;
+    }
+    .copyRightText{
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .topLogoHolder i{
+        font-size: 1.5em;
+        color: whitesmoke;
+        margin-top: 1% !important;
+        margin-left: 5%;
+    }
+    .threeBoxesContainer{
+        width: 100%;
+        position: static;
     }
 }

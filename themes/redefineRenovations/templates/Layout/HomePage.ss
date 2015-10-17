@@ -143,12 +143,14 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mix $FeaturedWorkCategoryID">
                 <div class="col-lg-12 imageHoverEffect">
                     <h4 style="color: white; margin-top: 30%;">$ProjectBriefDesc</h4>
-                    <i class="fa fa-expand" data-toggle="modal" data-target=".$ID"></i>
+                    <% if $ProjectPhaseImg1 %>
+                        <i class="fa fa-expand" data-toggle="modal" data-target=".$ID"></i>
+                    <% end_if %>
                 </div>
                 <img src="$ProjectCoverImage.URL" class="img-responsive" title="Test Image">
                 <div class="col-lg-12 innerImageDesc">
                     <h3>$ProjectTitle</h3>
-                    <h4>$ProjectDate.Nice</h4>
+                    <!--<h4>$ProjectDate.Nice</h4>-->
                 </div>
             </div>
         <% end_loop %>
@@ -332,7 +334,7 @@
                 <% if $Reviews %>
                     <% loop $Reviews %>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 reviewBox">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewBox">
                                 <% if $CustReviewTitle %>
                                     <h3>$CustReviewTitle</h3>
                                 <% end_if %>

@@ -76,12 +76,12 @@ class HomePage extends Page {
         ));
 
         //create Reviews Section GridField
-        $fields->addFieldToTab('Root.ClientReviews', GridField::create(
+        /*$fields->addFieldToTab('Root.ClientReviews', GridField::create(
             'Reviews',
             'Client Reviews',
             $this->Reviews(),
             GridFieldConfig_RecordEditor::create()
-        ));
+        ));*/
 
         //add new fields to the CMS interface
         //CMS fields for services

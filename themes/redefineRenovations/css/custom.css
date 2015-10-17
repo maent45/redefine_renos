@@ -51,7 +51,7 @@ html, body {
     color: #333 !important;
 }
 .bannerAndServicesWrapper{
-    height: 60%;
+    height: auto !important;
     padding: 0px;
 }
 
@@ -91,7 +91,7 @@ html, body {
     width: 100%;
 }
 
-/*--- test Divs ---*/
+/*--- test Divs ---
 .mainDiv{
     height: auto !important;
     position: relative;
@@ -100,10 +100,6 @@ html, body {
 }
 .testCarousel{
 
-}
-.testCarouselDiv{
-    background-color: yellow;
-    padding: 2%;
 }
 .testServicesDiv{
     background-color: green;
@@ -118,20 +114,18 @@ html, body {
     background-color: orange;
     margin-top: 1%;
     height: auto;
-}
+}*/
 
 /*--- three boxes css ---*/
 .threeBoxesContainer{
-    position: absolute;
     top: 75%;
-    bottom: 0;
     left: 0;
     right: 0;
+    position: absolute;
     z-index: 99999;
     height: auto;
     width: 90%;
     margin: auto;
-    margin-bottom: auto !important;
 }
 .threeBoxesContainer button{
     margin-top: 6%;
@@ -157,8 +151,7 @@ html, body {
 
 /*--- company statement css ---*/
 .topStatementDiv{
-    margin-top: 15%;
-    position: static !important;
+    margin-top: 18%;
     background-color: #449d44;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -321,7 +314,7 @@ html, body {
     background-color: #222;
     padding: 2%;
 }
-.footerSocial .fa-facebook{
+/*.footerSocial .fa-facebook{
     font-size: 1.7em;
     border: 1px solid lightgray;
     border-radius: 50%;
@@ -338,6 +331,9 @@ html, body {
     padding: 4.5%;
     margin: auto !important;
     color: #999999;
+}*/
+.copyRightText{
+    margin-top: 30%;
 }
 .footerContact i{
     font-size: 1.5em;

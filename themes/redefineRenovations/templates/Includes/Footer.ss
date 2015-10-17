@@ -2,7 +2,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
     <div class="container">
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="text-align: center; color: #777;">
-            <h5 style="margin-top: 30%;">Copyright &copy; 2015 Redefine Renovations</h5>
+            <h5 class="copyRightText">Copyright &copy; 2015 Redefine Renovations</h5>
         </div>
         <div class="col-lg-3"></div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footerContact">
