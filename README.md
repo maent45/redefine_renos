@@ -1,4 +1,4 @@
-Full Silverstripe Theme
+#Full Silverstripe Theme
 
 A static template that has been moved into Silverstripe for learning purposes.
 
