@@ -22,6 +22,10 @@ class HomePage extends Page {
         'Quote1' => 'Text',
         'Quote2' => 'Text',
 
+        //db fields for featuredWorks section top headers
+        'FeaturedWorksSectionHeader' => 'Varchar',
+        'FeaturedWorksSectionSubHeader' => 'Varchar',
+
         //db fields for Contact Details
         'ContactMenuTitle' => 'Varchar',
         'PhoneNumber' => 'Varchar',
@@ -66,6 +70,10 @@ class HomePage extends Page {
             $this->Categories(),
             GridFieldConfig_RecordEditor::create()
         ));
+
+        //CMS fields for featuredWorks section top headers
+        $fields->addFieldToTab('Root.FeaturedWorks', TextField::create('FeaturedWorksSectionHeader', 'Section Header'));
+        $fields->addFieldToTab('Root.FeaturedWorks', TextField::create('FeaturedWorksSectionSubHeader', 'Section Sub Header'));
 
         //create FeaturedWorks GridField
         $fields->addFieldToTab('Root.FeaturedWorks', GridField::create(
@@ -123,7 +131,6 @@ class HomePage extends Page {
 
         return $fields;
     }
-
 }
 
 //create HomePage controller

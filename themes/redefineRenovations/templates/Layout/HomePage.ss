@@ -121,9 +121,11 @@
 <!--- featured works section --->
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 featuredWorksWrapper">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 featuredWorksHeader">
-        <h2>Featured Works</h2>
-        <div style="padding: 1px; background-color: darkgray; width: 20%; margin: auto; margin-bottom: 0%;"></div>
-        <h4>View our latest projects</h4>
+        <h2>$FeaturedWorksSectionHeader</h2>
+        <% if $FeaturedWorksSectionHeader %>
+            <div style="padding: 1px; background-color: darkgray; width: 20%; margin: auto; margin-bottom: 0%;"></div>
+        <% end_if %>
+        <h4>$FeaturedWorksSectionSubHeader</h4>
         <br>
     </div>
 
@@ -158,13 +160,17 @@
     </div>
 </div>
 
+<!--- loop over all featured work modals --->
 <% if $FeaturedWorks %>
+
     <% loop $FeaturedWorks %>
-        <div class="modal fade $ID" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal fade $ID" id="featuredWorkModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header" style="padding-bottom: 5%;">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2em; color: #222;">&times;</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size: 2em; color: #222;">&times;</span>
+                        </button>
                         <h1 class="modal-title">$ProjectTitle</h1>
                         <h4 class="pull-left">$ProjectBriefDesc</h4>
                     </div>
@@ -270,6 +276,10 @@
                             <li class="" data-slide-to="3" data-target="#$ID">
                                 <% if $ProjectPhaseImg4 %>
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
+                                <% else %>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" style="font-size: 2em; color: #222;">&times;</span>
+                                    </button>
                                 <% end_if %>
                             </li>
 
