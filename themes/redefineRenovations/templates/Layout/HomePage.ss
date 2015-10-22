@@ -34,7 +34,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h3>$ServiceTitle1</h3>
                     <p>$ServiceDesc1</p>
-                    <button class="btn btn-success"><a href="#">READ MORE</a></button>
+                    <button class="btn btn-success"><a href="new-services-page">READ MORE</a></button>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h3>$ServiceTitle2</h3>
                     <p>$ServiceDesc2</p>
-                    <button class="btn btn-success"><a href="#">READ MORE</a></button>
+                    <button class="btn btn-success"><a href="new-services-page">READ MORE</a></button>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h3>$ServiceTitle3</h3>
                     <p>$ServiceDesc3</p>
-                    <button class="btn btn-success"><a href="#">READ MORE</a></button>
+                    <button class="btn btn-success"><a href="new-services-page">READ MORE</a></button>
                 </div>
             </div>
 
