@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel" style="color: #009C2F;">Enquiry Form</h3>
+                <h3 class="modal-title" id="myModalLabel" style="color: #009C2F;">$ContactFormHeader</h3>
                 <i class="fa fa-envelope" style="margin-top: 2%; font-size: 1.8em;"></i>
                 &nbsp;
                 <span>$EmailAddress</span>
@@ -12,7 +12,7 @@
                 <i class="fa fa-phone" style="font-size: 1.9em !important; margin-top: 2%;"></i>
                 &nbsp;
                 <span>$PhoneNumber</span>
-                <h5 style="margin-top: 2%;">Contact us directly or leave us a message and we'll get in touch shortly.</h5>
+                <h5 style="margin-top: 2%;">$ContactFormMessage</h5>
             </div>
             <form name="contactForm" onsubmit="return validateContactForm()" method="post">
                 <div class="modal-body">

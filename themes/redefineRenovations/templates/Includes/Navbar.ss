@@ -9,12 +9,12 @@
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <i class="fa fa-envelope"></i>
             &nbsp;
-            <span>info@redefinerenos.com</span>
+            <span>$emailAddress</span>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <i class="fa fa-phone"></i>
             &nbsp;
-            <span>123-456-789</span>
+            <span>$phoneNumber</span>
         </div>
     </div>
 </div>
