@@ -49,18 +49,18 @@ class AboutPage extends Page {
         $fields->addFieldToTab('Root.Main', TextareaField::create('PageSubHeading', 'Page Sub Heading'));
 
         //left & right info section fields
-        $fields->addFieldToTab('Root.AboutUsInformation', HeaderField::create('Left Section Information'));
+        $fields->addFieldToTab('Root.Main', HeaderField::create('Left Section Information'));
         //add upload fields for images
-        $fields->addFieldToTab('Root.AboutUsInformation', $LeftSectionImage = new UploadField('LeftSectionImage','Left Section Image'));
+        $fields->addFieldToTab('Root.Main', $LeftSectionImage = new UploadField('LeftSectionImage','Left Section Image'));
 
-        $fields->addFieldToTab('Root.AboutUsInformation', TextField::create('LeftSectionTitle', 'Left Section Heading'));
-        $fields->addFieldToTab('Root.AboutUsInformation', TextareaField::create('LeftSectionDesc', 'Left Section Description'));
+        $fields->addFieldToTab('Root.Main', TextField::create('LeftSectionTitle', 'Left Section Heading'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('LeftSectionDesc', 'Left Section Description'));
 
-        $fields->addFieldToTab('Root.AboutUsInformation', HeaderField::create('Right Section Information'));
+        $fields->addFieldToTab('Root.Main', HeaderField::create('Right Section Information'));
         //right section image upload field
-        $fields->addFieldToTab('Root.AboutUsInformation', $RightSectionImage = new UploadField('RightSectionImage','Right Section Image'));
-        $fields->addFieldToTab('Root.AboutUsInformation', TextField::create('RightSectionTitle', 'Right Section Heading'));
-        $fields->addFieldToTab('Root.AboutUsInformation', TextareaField::create('RightSectionDesc', 'Right Section Description'));
+        $fields->addFieldToTab('Root.Main', $RightSectionImage = new UploadField('RightSectionImage','Right Section Image'));
+        $fields->addFieldToTab('Root.Main', TextField::create('RightSectionTitle', 'Right Section Heading'));
+        $fields->addFieldToTab('Root.Main', TextareaField::create('RightSectionDesc', 'Right Section Description'));
 
         //validate image types
         $LeftSectionImage->getValidator()->setAllowedExtensions(array('png','gif','jpg','jpeg'));
