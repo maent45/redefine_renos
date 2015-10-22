@@ -1,11 +1,26 @@
 <?php
 class Page extends SiteTree {
-
+/*
 	private static $db = array(
 	);
 
 	private static $has_one = array(
 	);
+*/
+
+	//get HomePage DataObject
+	function getHomePage(){
+		return DataObject::get_one('HomePage');
+	}
+
+	//methods to return contact details db fields from HomePage.php and make them global
+	public function phoneNumber(){
+		return $this->getHomePage()->PhoneNumber;
+	}
+
+	public function emailAddress(){
+		return $this->getHomePage()->EmailAddress;
+	}
 
 }
 class Page_Controller extends ContentController {

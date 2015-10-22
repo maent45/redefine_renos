@@ -30,6 +30,8 @@ class HomePage extends Page {
         'ContactMenuTitle' => 'Varchar',
         'PhoneNumber' => 'Varchar',
         'EmailAddress' => 'Varchar',
+        'ContactFormHeader' => 'Text',
+        'ContactFormMessage' => 'Text',
 
         //temporary db fields for customer reviews section
         /*'CustReviewTitle' => 'Text',
@@ -72,6 +74,7 @@ class HomePage extends Page {
         ));
 
         //CMS fields for featuredWorks section top headers
+        $fields->addFieldToTab('Root.FeaturedWorks', HeaderField::create('Section Headers'));
         $fields->addFieldToTab('Root.FeaturedWorks', TextField::create('FeaturedWorksSectionHeader', 'Section Header'));
         $fields->addFieldToTab('Root.FeaturedWorks', TextField::create('FeaturedWorksSectionSubHeader', 'Section Sub Header'));
 
@@ -114,9 +117,15 @@ class HomePage extends Page {
         $fields->addFieldToTab('Root.ClientReviews', TextareaField::create('CustReview', 'Client Review'));*/
 
         //CMS fields for Contact details ContactMenuTitle
-        $fields->addFieldToTab('Root.ContactInfo', TextField::create('ContactMenuTitle', 'Contact Form Menu Title'));
+        $fields->addFieldToTab('Root.ContactInfo', HeaderField::create('Contact Details'));
         $fields->addFieldToTab('Root.ContactInfo', TextField::create('PhoneNumber', 'Phone Number'));
         $fields->addFieldToTab('Root.ContactInfo', TextField::create('EmailAddress', 'Email Address'));
+
+        $fields->addFieldToTab('Root.ContactInfo', HeaderField::create('Contact Form'));
+        $fields->addFieldToTab('Root.ContactInfo', TextField::create('ContactMenuTitle', 'Contact Form Menu Title'));
+        $fields->addFieldToTab('Root.ContactInfo', TextField::create('ContactFormHeader', 'Contact Form Header'));
+        $fields->addFieldToTab('Root.ContactInfo', TextareaField::create('ContactFormMessage', 'Contact Form Message'));
+
 
         //create read-only fields
         $fields->addFieldToTab('Root.Metadata', new ReadonlyField('URLSegment', 'URL'));
