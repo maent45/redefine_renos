@@ -4,7 +4,7 @@
     }
 }
 
-@media screen and (max-width: 993px){
+@media screen and (max-width: 992px){
     .threeBoxesContainer{
         width: 100%;
         position: static;
@@ -17,6 +17,10 @@
     }
     .mainGallerySlideImageIndicators{
         margin-left: 7% !important;
+    }
+    .topLogoHolderPhone{
+        margin-top: 5% !important;
+        margin-bottom: 5%;
     }
 }
 

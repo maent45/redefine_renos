@@ -12,7 +12,7 @@
             <span>$emailAddress</span>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <i class="fa fa-phone"></i>
+            <i class="fa fa-phone topLogoHolderPhone"></i>
             &nbsp;
             <span>$phoneNumber</span>
         </div>

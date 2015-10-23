@@ -8,8 +8,7 @@
     <title>Renovation Site</title>
 
     <!--- css links --->
-    <link rel="stylesheet" href="$ThemeDir/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="$ThemeDir/css/custom.css">
     <link rel="stylesheet" href="$ThemeDir/css/mediaQueries.css">
     <!--- call services page css --->
