@@ -184,28 +184,47 @@
                     <div class="carousel slide mainGallerySlide" id="$ID">
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner mainGallerySlideInnerImages cont-slider">
-                            <div class="item active">
-                                <% if $ProjectPhaseImg1 %>
+
+                            <% if $ProjectPhaseImg1 %>
+                                <div class="item active">
                                     <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
+                                    <% if $ProjectPhaseDesc1 %>
+                                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                            <h4>$ProjectPhaseDesc1</h4>
+                                        </div>
+                                    <% end_if %>
+                                </div>
+                            <% else %>
+                                <div class="item active">
+                                    <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
+                                    <% if $ProjectPhaseDesc1 %>
+                                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                            <h4>$ProjectPhaseDesc1</h4>
+                                        </div>
+                                    <% end_if %>
+                                </div>
+                            <% end_if %>
 
-                                <% if $ProjectPhaseDesc1 %>
-                                    <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                        <h4>$ProjectPhaseDesc1</h4>
-                                    </div>
-                                <% end_if %>
-                            </div>
-                            <div class="item">
-                                <% if $ProjectPhaseImg2 %>
+                            <% if $ProjectPhaseImg2 %>
+                                <div class="item">
                                     <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
+                                    <% if $ProjectPhaseDesc2 %>
+                                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                            <h4>$ProjectPhaseDesc2</h4>
+                                        </div>
+                                    <% end_if %>
+                                </div>
+                            <% else %>
+                                <div class="item">
+                                    <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
+                                    <% if $ProjectPhaseDesc1 %>
+                                        <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                            <h4>$ProjectPhaseDesc1</h4>
+                                        </div>
+                                    <% end_if %>
+                                </div>
+                            <% end_if %>
 
-                                <% if $ProjectPhaseDesc2 %>
-                                    <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                        <h4>$ProjectPhaseDesc2</h4>
-                                    </div>
-                                <% end_if %>
-                            </div>
                             <div class="item">
                                 <% if $ProjectPhaseImg3 %>
                                     <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
@@ -217,6 +236,7 @@
                                     </div>
                                 <% end_if %>
                             </div>
+
                             <div class="item">
                                 <% if $ProjectPhaseImg4 %>
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
@@ -228,6 +248,7 @@
                                     </div>
                                 <% end_if %>
                             </div>
+
                             <div class="item">
                                 <% if $ProjectPhaseImg5 %>
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
@@ -239,6 +260,7 @@
                                     </div>
                                 <% end_if %>
                             </div>
+
                             <div class="item">
                                 <% if $ProjectPhaseImg6 %>
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
@@ -283,9 +305,7 @@
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li class="" data-slide-to="0" data-target="#$ID">
-
-                                </li>
+                                <li class="" data-slide-to="0" data-target="#$ID"></li>
                             <% end_if %>
 
                             <% if $ProjectPhaseImg5 %>
