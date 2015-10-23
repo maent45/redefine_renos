@@ -305,7 +305,7 @@
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li class="" data-slide-to="0" data-target="#$ID"></li>
+                                <div data-slide-to="0"></div>
                             <% end_if %>
 
                             <% if $ProjectPhaseImg5 %>
@@ -313,7 +313,7 @@
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li data-slide-to="0"></li>
+                                <li class="" data-slide-to="0" data-target="#$ID"></li>
                             <% end_if %>
 
                             <% if $ProjectPhaseImg6 %>
@@ -321,7 +321,7 @@
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li data-slide-to="0"></li>
+                                <li class="" data-slide-to="0" data-target="#$ID"></li>
                             <% end_if %>
                         </ol>
 

@@ -54,8 +54,8 @@ class FeaturedWork extends DataObject {
         //key = db column, value = GridField column name to display
         'GridThumbnail' => 'Cover Image',
         'FeaturedWorkCategory.Title' => 'Category',
-        'ProjectTitle' => 'Title',
-        'ProjectDate' => 'Completion Date'
+        'ProjectTitle' => 'Title'
+        /*'ProjectDate' => 'Completion Date'*/
     );
 
     //resize GridField thumbnail

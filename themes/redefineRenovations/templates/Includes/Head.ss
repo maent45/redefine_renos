@@ -9,6 +9,7 @@
 
     <!--- css links --->
     <link rel="stylesheet" href="$ThemeDir/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="$ThemeDir/css/custom.css">
     <link rel="stylesheet" href="$ThemeDir/css/mediaQueries.css">
     <!--- call services page css --->
