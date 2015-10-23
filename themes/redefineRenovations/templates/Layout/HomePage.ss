@@ -254,58 +254,65 @@
 
                         <!-- Indicators -->
                         <ol class="carousel-indicators mainGallerySlideImageIndicators">
-
-                            <li class="" data-slide-to="0" data-target="#$ID">
-                                <% if $ProjectPhaseImg1 %>
+                            <% if $ProjectPhaseImg1 %>
+                                <li class="" data-slide-to="0" data-target="#$ID">
                                     <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-                            </li>
+                                </li>
+                            <% else %>
+                                <li data-slide-to="0"></li>
+                            <% end_if %>
 
-                            <li class="" data-slide-to="1" data-target="#$ID">
-                                <% if $ProjectPhaseImg2 %>
+                            <% if $ProjectPhaseImg2 %>
+                                <li class="" data-slide-to="1" data-target="#$ID">
                                     <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-                            </li>
+                                </li>
+                            <% else %>
+                                <li data-slide-to="0"></li>
+                            <% end_if %>
 
-                            <li class="" data-slide-to="2" data-target="#$ID">
-                                <% if $ProjectPhaseImg3 %>
+                            <% if $ProjectPhaseImg3 %>
+                                <li class="" data-slide-to="2" data-target="#$ID">
                                     <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-                            </li>
+                                </li>
+                            <% else %>
+                                <li class="" data-slide-to="0"></li>
+                            <% end_if %>
 
-                            <li class="" data-slide-to="3" data-target="#$ID">
-                                <% if $ProjectPhaseImg4 %>
+                            <% if $ProjectPhaseImg4 %>
+                                <li class="" data-slide-to="3" data-target="#$ID">
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
-                                <% else %>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true" style="font-size: 2em; color: #222;">&times;</span>
-                                    </button>
-                                <% end_if %>
-                            </li>
+                                </li>
+                            <% else %>
+                                <li class="" data-slide-to="0" data-target="#$ID">
 
-                            <li class="" data-slide-to="4" data-target="#$ID">
-                                <% if $ProjectPhaseImg5 %>
+                                </li>
+                            <% end_if %>
+
+                            <% if $ProjectPhaseImg5 %>
+                                <li class="" data-slide-to="4" data-target="#$ID">
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-                            </li>
+                                </li>
+                            <% else %>
+                                <li data-slide-to="0"></li>
+                            <% end_if %>
 
-                            <li class="" data-slide-to="5" data-target="#$ID">
-                                <% if $ProjectPhaseImg6 %>
+                            <% if $ProjectPhaseImg6 %>
+                                <li class="" data-slide-to="5" data-target="#$ID">
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-                            </li>
-
+                                </li>
+                            <% else %>
+                                <li data-slide-to="0"></li>
+                            <% end_if %>
                         </ol>
 
                         <!-- Controls -->
-                        <% if $ProjectPhaseImg1 %>
-                            <a class="left carousel-control" href="#$ID" role="button" data-slide="prev">
-                                <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
-                            </a>
-                            <a class="right carousel-control" href="#$ID" role="button" data-slide="next">
-                                <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
-                            </a>
-                        <% end_if %>
+                        <a class="left carousel-control" href="#$ID" role="button" data-slide="prev">
+                            <i class="fa fa-long-arrow-left" style="font-size: 2em; margin-top: 190%;"></i>
+                        </a>
+                        <a class="right carousel-control" href="#$ID" role="button" data-slide="next">
+                            <i class="fa fa-long-arrow-right" style="font-size: 2em; margin-top: 190%;"></i>
+                        </a>
+
                     </div>
                 </div>
             </div>
