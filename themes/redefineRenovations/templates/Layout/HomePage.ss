@@ -225,53 +225,42 @@
                                 </div>
                             <% end_if %>
 
-                            <div class="item">
-                                <% if $ProjectPhaseImg3 %>
+                            <% if $ProjectPhaseImg3 %>
+                                <div class="item">
                                     <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
+                                <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
+                                    <h4>$ProjectPhaseDesc3</h4>
+                                </div>
+                                </div>
+                            <% end_if %>
 
-                                <% if $ProjectPhaseDesc3 %>
-                                    <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
-                                        <h4>$ProjectPhaseDesc3</h4>
-                                    </div>
-                                <% end_if %>
-                            </div>
 
-                            <div class="item">
-                                <% if $ProjectPhaseImg4 %>
+                            <% if $ProjectPhaseImg4 %>
+                                <div class="item">
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-
-                                <% if $ProjectPhaseDesc4 %>
                                     <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
                                         <h4>$ProjectPhaseDesc4</h4>
                                     </div>
-                                <% end_if %>
-                            </div>
+                                </div>
+                            <% end_if %>
 
-                            <div class="item">
-                                <% if $ProjectPhaseImg5 %>
+                            <% if $ProjectPhaseImg5 %>
+                                <div class="item">
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-
-                                <% if $ProjectPhaseDesc5 %>
                                     <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
                                         <h4>$ProjectPhaseDesc5</h4>
                                     </div>
-                                <% end_if %>
-                            </div>
+                                </div>
+                            <% end_if %>
 
-                            <div class="item">
-                                <% if $ProjectPhaseImg6 %>
+                            <% if $ProjectPhaseImg6 %>
+                                <div class="item">
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
-                                <% end_if %>
-
-                                <% if $ProjectPhaseDesc6 %>
                                     <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); margin-bottom: 7%;">
                                         <h4>$ProjectPhaseDesc6</h4>
                                     </div>
-                                <% end_if %>
-                            </div>
+                                </div>
+                            <% end_if %>
                         </div>
 
                         <!-- Indicators -->
@@ -281,7 +270,7 @@
                                     <img src="$ProjectPhaseImg1.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li data-slide-to="0"></li>
+
                             <% end_if %>
 
                             <% if $ProjectPhaseImg2 %>
@@ -289,7 +278,7 @@
                                     <img src="$ProjectPhaseImg2.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li data-slide-to="0"></li>
+
                             <% end_if %>
 
                             <% if $ProjectPhaseImg3 %>
@@ -297,7 +286,7 @@
                                     <img src="$ProjectPhaseImg3.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li class="" data-slide-to="0"></li>
+
                             <% end_if %>
 
                             <% if $ProjectPhaseImg4 %>
@@ -305,7 +294,7 @@
                                     <img src="$ProjectPhaseImg4.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <div data-slide-to="0"></div>
+
                             <% end_if %>
 
                             <% if $ProjectPhaseImg5 %>
@@ -313,7 +302,7 @@
                                     <img src="$ProjectPhaseImg5.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li class="" data-slide-to="0" data-target="#$ID"></li>
+
                             <% end_if %>
 
                             <% if $ProjectPhaseImg6 %>
@@ -321,7 +310,7 @@
                                     <img src="$ProjectPhaseImg6.URL" class="img-responsive" title="Test Image">
                                 </li>
                             <% else %>
-                                <li class="" data-slide-to="0" data-target="#$ID"></li>
+
                             <% end_if %>
                         </ol>
 
