@@ -58,59 +58,6 @@
     </div>
 </div>
 
-<!---------------------------------------------------------------------------------------------------------->
-
-<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainDiv">
-    <!--- main banner --->
-    <!--<div id="carousel-example-generic" class="carousel slide testCarousel" data-ride="carousel">-->
-        <!-- Wrapper for slides -->
-        <!--<div class="carousel-inner" role="listbox">
-            <% loop $SlideShows %>
-                <% if Pos = 1 %>
-                    <div class="item active img-responsive">
-                        $SlideShowImage.CroppedImage(1583,460)
-                    </div>
-                <% else %>
-                    <div class="item img-responsive">
-                        $SlideShowImage.CroppedImage(1583,460)
-                    </div>
-                <% end_if %>
-            <% end_loop %>-->
-        </div>
-        <!-- Carousel Controls
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 testServicesDiv">
-        <div class="container">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
-                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
-                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
-
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>testttt Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.Always willing to go the extra mile and specializes in the deployment of HTML5, CSS3, Php, SQL, Content Management Systems, and cloud technologies.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-
 <!--- quote area --->
 <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 topStatementDiv">
@@ -354,12 +301,12 @@
                                 <% if $jobTitle %>
                                     <h3>$jobTitle</h3>
                                 <% end_if %>
-                                <!--<% if $date %>
+                                <% if $date %>
                                     <i class="fa fa-calendar"></i>
                                     &nbsp;
                                     <span>$date</span>
                                     <br>
-                                <% end_if %>-->
+                                <% end_if %>
                                 <!--<% if $jobNumber %>
                                 <i class="fa fa-external-link"></i>
                                 &nbsp;
@@ -372,33 +319,6 @@
                             </div>
                         </div>
                     <% end_loop %>
-                <!----------------------------------------------------------------------->
-                <!--<% if $Reviews %>
-                    <% loop $Reviews %>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewBox">
-                                <% if $CustReviewTitle %>
-                                    <h3>$CustReviewTitle</h3>
-                                <% end_if %>
-                                <% if $CustReviewDate %>
-                                    <i class="fa fa-calendar"></i>
-                                    &nbsp;
-                                    <span>$CustReviewDate.Nice</span>
-                                    <br>
-                                <% end_if %>
-                                <% if $CustReviewName %>
-                                    <i class="fa fa-user"></i>
-                                    &nbsp;
-                                    <span>$CustReviewName</span>
-                                <% end_if %>
-                                <br><br>
-                                <% if $CustReview %>
-                                    <p><span style="font-weight: 900 !important; color: #000;">"</span>$CustReview<span style="font-weight: 900 !important; color: #000">"</span></p>
-                                <% end_if %>
-                            </div>
-                        </div>
-                    <% end_loop %>
-                <% end_if %>-->
                 <!--- finish looping the Reviews Section --->
             </div>
         </div>
