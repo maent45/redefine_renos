@@ -75,7 +75,7 @@ class FeaturedWork extends DataObject {
             $imgUploadField = UploadField::create('ProjectCoverImage', 'Cover Image'),
             TextareaField::create('ProjectBriefDesc', 'Hover Over Description'),
             TextField::create('ProjectTitle', 'Title'),
-            DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy'),
+            //DateField::create('ProjectDate', 'Completion Date')->setConfig('dateformat', 'dd-MM-yyyy'),
 
             HeaderField::create('Project Phases'),
             //images and descriptions for project phases
