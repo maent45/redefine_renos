@@ -7,14 +7,6 @@ $(function(){
     $('#Container').mixItUp();
 
 //Instantiate sliphover
-    //$(".featuredWorksWrapper").sliphover();
-
-    /*$('#d1').contenthover({
-        effect:'slide',
-        slide_speed:300,
-        overlay_background:'#000',
-        overlay_opacity:0.8
-    });*/
 
     //hide hover effect on dom load
     $('.imageHoverEffect').hide();
