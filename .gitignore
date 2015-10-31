@@ -10,4 +10,4 @@ silverstripe-cache
 vendor/
 /mysite/_config.php
 .htaccess
-
+silverstripe-gridfield/

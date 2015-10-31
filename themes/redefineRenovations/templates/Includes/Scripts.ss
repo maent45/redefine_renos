@@ -1,5 +1,6 @@
 <!--- scripts --->
 <script src="$ThemeDir/javascript/jquery-2.1.4.min.js"></script>
+<script src="$ThemeDir/javascript/jQuery.PaginateME/jquery.pageinateME.js"></script>
 <script src="$ThemeDir/javascript/bootstrap.min.js"></script>
 
 <!--- mixItUp plugin js --->
